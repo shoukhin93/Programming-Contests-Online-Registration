@@ -64,7 +64,9 @@
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-      </nav> 
+      </nav>
+      <div id="ContentOfBody" class="container-fluid">
+        <h1><center>Herer we Just add Our Content</center></h1>
+      </div> 
   </body>
-
 </html>
