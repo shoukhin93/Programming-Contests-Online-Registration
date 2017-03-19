@@ -11,6 +11,11 @@
 |
 */
 
+
+Route::get('main', function () {
+    return view('main');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
