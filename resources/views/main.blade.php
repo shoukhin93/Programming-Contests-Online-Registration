@@ -7,6 +7,8 @@
 
   <body>
      @include('partials.MainPartials._navigation')
+      <div id="ContentOfBody" class="container-fluid">
+        <h1><center>Here we Just add Our Content</center></h1>
+      </div>
   </body>
-
 </html>
