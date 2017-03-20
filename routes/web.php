@@ -16,6 +16,10 @@ Route::get('main', function () {
     return view('main');
 });
 
+Route::get('user_registration', function () {
+    return view('user_registration');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
