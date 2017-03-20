@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default my-nav">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -14,7 +14,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="fullNavbar">
             <!--Left navigation start -->
-            <ul class="nav navbar-nav"> 
+            <ul class="nav navbar-nav my-menu"> 
               <li class="Home"><a href="#">Home</a></li>
               <li class="Contests"><a href="#">Contests</a></li>
               <li class="Results"><a href="#">Results</a></li>
@@ -38,7 +38,7 @@
             
             
             <!--Right navigation start -->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right my-menu">
               <li><a href="#">Name</a></li>
               <li><a href="#">Logout</a></li>
             </ul> <!--Right navigation ends -->
