@@ -23,3 +23,7 @@ Route::get('user_registration', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('profile',function(){
+	return view('profile.profile');
+});
