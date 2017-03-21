@@ -54,7 +54,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class=" col-sm-12 pro_head">
+		<div class="col-sm-12 pro_head">
 		<h2>Contest Activity</h2>	
 		</div>
     <div class="col-sm-12">

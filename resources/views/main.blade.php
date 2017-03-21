@@ -15,9 +15,9 @@
         <!--<button class="btn btn-default one">Button</button>
         <button class="btn btn-default two">Button1</button>-->
       </div>
-      <footer class="navbar-fixed-bottom clearfixs">
+      <footer class="navbar-fixed-bottom clearfix">
             <small>monmoy jaggesher and shoukhin all rights reserved</small>
-        </footer>
+      </footer>
   </body>
  
 </html>
