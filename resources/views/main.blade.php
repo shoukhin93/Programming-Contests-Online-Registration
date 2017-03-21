@@ -9,10 +9,12 @@
   <body>
      @include('partials.MainPartials._navigation')
       <div id="ContentOfBody" class="container-fluid">
-        <!-- <img src="/../image/background.jpg" alt="img" class="img-responsive"> -->
         @yield('ContentOfBody')
-        <h1>I Am Monmoy</h1>
        {{-- <h1><center>Here we Just add Our Content</center></h1> --}}
+        
       </div>
+      <footer class="navbar-fixed-bottom clearfixs">
+            <small>monmoy jaggesher and shoukhin all rights reserved</small>
+        </footer>
   </body>
 </html>

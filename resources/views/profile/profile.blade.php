@@ -12,7 +12,8 @@
 
 {{-- Main Profile View --}}
 @section('ContentOfBody') 
-	<div class="container pro_cls">
+<div class="full-profile">
+  <div class="container pro_cls">
 		<div class=" col-sm-12 pro_head">
 		<h2> <strong>Rakul's</strong> Profile</h2>	
 		</div>
@@ -57,4 +58,6 @@
 		<h2>Contest Activity</h2>	
 		</div>
 	</div>
-@endsection 
+  @endsection 
+</div>
+	

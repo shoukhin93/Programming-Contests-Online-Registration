@@ -1,15 +1,15 @@
 body,html{
     width: 100%;
     height: 100%;
-    /*background-image: url("/../image/background.jpg") no-repeat center center;
+    /*background: url('/image/background.jpg') no-repeat center center;
     background-size: cover;*/
 }
-/*#ContentOfBody{
-    
-}*/
+#ContentOfBody{
+    background: url('/image/background.jpg') no-repeat center center;
+    background-size: cover;
+}
 .my-nav{
-    background : #357ed3;
-    color: white;
+    background: #4395f4;
     border-radius: 0;
     border: 0;
     margin: 0;
@@ -21,9 +21,13 @@ body,html{
     background: white;
 }
 .my-nav .my-menu .dropdown .dropdown-menu{
-    background: #357ed3;
+    background: #4395f4;
 }
 .my-nav .my-menu .dropdown li a:hover{
     background: white;
     color:black;
+}
+footer{
+    text-align: center;
+    background: white;
 }
