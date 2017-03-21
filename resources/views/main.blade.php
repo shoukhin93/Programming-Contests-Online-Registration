@@ -8,13 +8,16 @@
 
   <body>
      @include('partials.MainPartials._navigation')
+      <hr>
       <div id="ContentOfBody" class="container-fluid">
         @yield('ContentOfBody')
        {{-- <h1><center>Here we Just add Our Content</center></h1> --}}
-        
+        <!--<button class="btn btn-default one">Button</button>
+        <button class="btn btn-default two">Button1</button>-->
       </div>
       <footer class="navbar-fixed-bottom clearfixs">
             <small>monmoy jaggesher and shoukhin all rights reserved</small>
         </footer>
   </body>
+ 
 </html>
