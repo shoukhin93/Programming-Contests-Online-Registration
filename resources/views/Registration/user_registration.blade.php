@@ -17,27 +17,25 @@
    <div class="col-sm-3">   
 	<form>
 	<div class="form-group">
-	    <label for="userName">Name:</label>
-	    <input type="text" class="form-control" id="userName">
+	    <input type="text" class="form-control" id="userFirstName" placeholder="First Name">
+	  </div>
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="userLastName" placeholder="Last Name">
 	  </div>
 	<div class="form-group">
-	    <label for="userID">User ID:</label>
-	    <input type="text" class="form-control" id="userID">
+	    <input type="text" class="form-control" id="userID"  placeholder="Enter Student ID">
 	  </div>
 	  <div class="form-group">
-	    <label for="pwd">Password:</label>
-	    <input type="password" class="form-control" id="pwd">
+	    <input type="password" class="form-control" id="pwd" placeholder="password">
 	  </div>
 	  <div class="form-group">
-	    <label for="cpwd">Confirm Password:</label>
-	    <input type="password" class="form-control" id="cpwd">
+	    <input type="password" class="form-control" id="cpwd" placeholder="Re-type password">
 	  </div>
 	  <div class="form-group">
-	    <label for="email">Email address:</label>
-	    <input type="email" class="form-control" id="email">
+	    <input type="email" class="form-control" id="email" placeholder="Enter Email">
 	  </div>
 	  	  
-	  <button type="submit" class="btn btn-default">Submit</button>
+	  <button type="submit" class="btn btn-primary btn-block">Submit</button>
 	</form>
 
 	</div> 
