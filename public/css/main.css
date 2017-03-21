@@ -1,7 +1,8 @@
 body,html{
     width: 100%;
     height: 100%;
-    background-image: url('background.jpg') no-repeat center center
+    /*background-image: url("/../image/background.jpg") no-repeat center center;
+    background-size: cover;*/
 }
 /*#ContentOfBody{
     
@@ -19,10 +20,10 @@ body,html{
 .my-nav .my-menu li a:hover{
     background: white;
 }
-.my-nav .my-menu .Dropdown .dropdown-menu{
+.my-nav .my-menu .dropdown .dropdown-menu{
     background: #357ed3;
 }
-.my-nav .my-menu .Dropdown li a:hover{
+.my-nav .my-menu .dropdown li a:hover{
     background: white;
     color:black;
 }

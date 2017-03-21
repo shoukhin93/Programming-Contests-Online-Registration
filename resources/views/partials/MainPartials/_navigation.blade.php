@@ -2,7 +2,7 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fullNavbar" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -19,7 +19,7 @@
               <li class="Contests"><a href="#">Contests</a></li>
               <li class="Results"><a href="#">Results</a></li>
               <!--Admin dropdown starts -->
-              <li class="Dropdown"> 
+              <li class="dropdown"> 
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Add Contest</a></li>
