@@ -22,7 +22,7 @@
 			<img src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail" alt="Profile Pic" width="200" height="200">
 			<p class="cls_phn_num"> <span class="glyphicon glyphicon-phone-alt" style="color: #357ed3;"></span> 01915770274</p>
 		</div>
-		<div class="col-sm-6 pro-info">
+		<div class="col-sm-6">
 		<table class="table info_table">
             <tbody>
               <tr>
@@ -57,7 +57,11 @@
 		<div class=" col-sm-12 pro_head">
 		<h2>Contest Activity</h2>	
 		</div>
+    <div class="col-sm-12">
+      <h1>Here goes Contest Log</h1>
+    </div>
 	</div>
-  @endsection 
 </div>
+@endsection 
+
 	
