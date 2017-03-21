@@ -8,7 +8,6 @@
 
   <body>
      @include('partials.MainPartials._navigation')
-     img
       <div id="ContentOfBody" class="container-fluid">
         @yield('ContentOfBody')
         <h1>I Am Monmoy</h1>
