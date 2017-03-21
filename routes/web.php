@@ -17,7 +17,7 @@ Route::get('main', function () {
 });
 
 Route::get('user_registration', function () {
-    return view('user_registration');
+    return view('Registration.user_registration');
 });
 
 Route::get('/', function () {
