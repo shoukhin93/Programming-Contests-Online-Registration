@@ -54,3 +54,12 @@
     border-bottom: 2px solid black;
 }
 .info_table td:first-child {color:#357ed3; max-width: 60px; border-right: 1px dotted  rgb(128, 128, 128);}
+
+@media (max-width: 768px) {
+    .info_table{
+    	font-size: 16px;
+    }
+    .pro-info{
+    	height: 250px;
+    }
+}
