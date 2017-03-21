@@ -8,11 +8,11 @@
 
   <body>
      @include('partials.MainPartials._navigation')
+     img
       <div id="ContentOfBody" class="container-fluid">
-
         @yield('ContentOfBody')
-       {{-- <h1><center>Here we Just add Our Content</center></h1> --}} 
-
+        <h1>I Am Monmoy</h1>
+       {{-- <h1><center>Here we Just add Our Content</center></h1> --}}
       </div>
   </body>
 </html>

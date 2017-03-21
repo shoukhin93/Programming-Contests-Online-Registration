@@ -1,12 +1,17 @@
 body,html{
     width: 100%;
     height: 100%;
+    background-image: url('background.jpg') no-repeat center center
 }
+/*#ContentOfBody{
+    
+}*/
 .my-nav{
     background : #357ed3;
     color: white;
     border-radius: 0;
     border: 0;
+    margin: 0;
 }
 .my-nav .my-menu li a {
     color: white;
