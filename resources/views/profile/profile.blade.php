@@ -57,7 +57,11 @@
 		<div class=" col-sm-12 pro_head">
 		<h2>Contest Activity</h2>	
 		</div>
+    <div class="col-sm-12">
+      <h1>Here goes Contest Log</h1>
+    </div>
 	</div>
-  @endsection 
 </div>
+@endsection 
+
 	
