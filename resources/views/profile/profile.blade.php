@@ -1,13 +1,19 @@
 @extends('main')
 
 {{-- Including  required CSS/JS/Other --}}
+
+@section('title')
+	Profile
+@endsection
+
 @section('OuterInclude')
 	<link href="{{ asset('css/profile.css') }}" rel="stylesheet" >
 @endsection
 
 {{-- Main Profile View --}}
 @section('ContentOfBody') 
-	<div class="container pro_cls">
+<div class="full-profile">
+  <div class="container pro_cls">
 		<div class=" col-sm-12 pro_head">
 		<h2> <strong>Rakul's</strong> Profile</h2>	
 		</div>
@@ -48,8 +54,14 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class=" col-sm-12 pro_head">
+		<div class="col-sm-12 pro_head">
 		<h2>Contest Activity</h2>	
 		</div>
+    <div class="col-sm-12">
+      <h1>Here goes Contest Log</h1>
+    </div>
 	</div>
+</div>
 @endsection 
+
+	
