@@ -27,11 +27,34 @@ hr{
 }
 .my-nav .my-menu .dropdown .dropdown-menu{
     background: #4395f4;
+    color: white;
 }
 .my-nav .my-menu .dropdown li a:hover{
     background: #317cd3;
     color:white;
 }
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: White;
+    background-color: #317cd3;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+     background-color: white;
+}
+
+@media (max-width: 767px)
+{
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: white;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+        color: White;
+         background-color: #317cd3;
+    }
+}
+
 footer{
     text-align: center;
     background: white;

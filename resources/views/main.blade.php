@@ -10,10 +10,8 @@
      @include('partials.MainPartials._navigation')
       <hr>
       <div id="ContentOfBody" class="container-fluid">
+        <!--The entire content div should be given padding 10px-->
         @yield('ContentOfBody')
-       {{-- <h1><center>Here we Just add Our Content</center></h1> --}}
-        <!--<button class="btn btn-default one">Button</button>
-        <button class="btn btn-default two">Button1</button>-->
       </div>
       <footer class="clearfix">
             <small>monmoy jaggesher and shoukhin all rights reserved</small>
