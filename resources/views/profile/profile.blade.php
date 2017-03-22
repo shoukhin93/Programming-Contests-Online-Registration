@@ -59,6 +59,8 @@
 		</div>
     <div class="col-sm-12">
       <h1>Here goes Contest Log</h1>
+      <h1>Here goes Contest Log</h1>
+      <h1>Here goes Contest Log</h1>
     </div>
 	</div>
 </div>

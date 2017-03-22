@@ -12,7 +12,7 @@
       <div id="ContentOfBody" class="container-fluid">
         @yield('ContentOfBody')
       </div>
-      <footer class="navbar-fixed-bottom clearfix">
+      <footer class="clearfix">
             <p>monmoy jaggesher and shoukhin all rights reserved</p>
       </footer>
   </body>
