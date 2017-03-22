@@ -12,7 +12,7 @@
 
 {{-- Main Profile View --}}
 @section('ContentOfBody') 
-<div class="full-profile">
+<div class="full-profile ">
   <div class="container pro_cls">
 		<div class=" col-sm-12 pro_head">
 		<h2> <strong>Rakul's</strong> Profile</h2>	

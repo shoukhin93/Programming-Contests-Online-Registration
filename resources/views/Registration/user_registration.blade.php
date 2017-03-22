@@ -5,15 +5,26 @@
 @endsection 
 
 @section('OuterInclude')
-	<style type="text/css"></style>
+	<link href="{{ asset('css/user_registration.css') }}" rel="stylesheet" >
 @endsection
 
 
  @section('ContentOfBody')
 
 <div class = "registrationBody">
+
   <div class="row">
-   <div class="col-sm-8"> </div>
+  <h1><center>Registration Form</center></h1>
+  <div class="col-sm-1"></div>
+   <div class="col-sm-5"> 
+   <div class="jumbotron">
+    <h2>Welcome to registration page</h2>  <br>    
+    <p>Fill the data correctly and wait for admin to confirm your registration</p>
+    <p>Already have an account? try 
+    <button class="btn btn-primary">sign in</button></p>
+  </div>
+  </div>
+  <div class="col-sm-2"></div>
    <div class="col-sm-3">   
 	  <form>
 		<div class="form-group">
