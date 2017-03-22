@@ -27,6 +27,7 @@ hr{
 .my-nav .my-menu li a {
     color: white;
     font-family: 'Ropa Sans', sans-serif;
+    font-size: 15px;
 }
 
 .my-nav .my-menu li a:hover,a:focus{
