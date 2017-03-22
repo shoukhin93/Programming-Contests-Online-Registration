@@ -15,7 +15,7 @@
 
 {{-- Main Profile View --}}
 <div class="container pro_cls">
-	<div class=" col-sm-12 pro_head">
+	<div class=" col-sm-12 pro_head clearfix">
 	<h2 class="pull-left"> <strong>Rakul's</strong> Profile</h2>
   <h2 class="pull-right">
     <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
@@ -96,9 +96,9 @@
           <td>2</td>
         </tr>
         <tr>
-          <td><a href="#">#RU322</a></td>
-          <td>RU_Mala_Boro_Name</td>
-          <td>0</td>
+          <td><a href="#">#RU22</a></td>
+          <td>RU_TITANS</td>
+          <td>2</td>
         </tr>
       </tbody>
 
