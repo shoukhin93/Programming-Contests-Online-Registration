@@ -14,7 +14,7 @@
 <div class = "registrationBody">
 
   <div class="row">
-  <h1><center>Registration Form</center></h1>
+  <h1 id = "main_label"><center>Registration Form</center></h1>
   <div class="col-sm-1"></div>
    <div class="col-sm-5"> 
    <div class="jumbotron">
