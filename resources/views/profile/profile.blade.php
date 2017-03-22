@@ -16,7 +16,10 @@
 {{-- Main Profile View --}}
 <div class="container pro_cls">
 	<div class=" col-sm-12 pro_head">
-	<h2> <strong>Rakul's</strong> Profile</h2>	
+	<h2 class="pull-left"> <strong>Rakul's</strong> Profile</h2>
+  <h2 class="pull-right">
+    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
+  </h2>	
 	</div>
 	<div class="col-sm-2"></div>
 	<div class="col-sm-3" align="center"> 
@@ -47,7 +50,7 @@
               <td>3'rd</td>
             </tr>
             <tr>
-              <td>Phon:</td>
+              <td>Phone:</td>
               <td>01915770274</td>
             </tr>
           </tbody>
@@ -105,6 +108,14 @@
     </br>
   </div>
 </div>
+
+
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+</script>
+
 @endsection 
 
 	
