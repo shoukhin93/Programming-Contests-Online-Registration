@@ -13,7 +13,10 @@
         @yield('ContentOfBody')
       </div>
       <footer class="clearfix">
+            <hr>
             <p>monmoy jaggesher and shoukhin all rights reserved</p>
+            <p>Made For Rajshahi University CSE</p>
+            <p>For Registration of contest programming purpose</p>
       </footer>
   </body>
  

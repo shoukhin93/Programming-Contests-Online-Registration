@@ -13,6 +13,7 @@ hr{
     margin: 0;
     padding: 0;
     background: white;
+    border: none;
 }
 
 #ContentOfBody{
@@ -72,8 +73,10 @@ hr{
 
 footer{
     text-align: center;
-    background: white;
+    background: #2f2f2f;
+    color: white;
+    font-size: 15px;
     font-family: 'Jim Nightshade', cursive;
     display: table-row;
-    height: 1px;
+    height: 5px;
 }
