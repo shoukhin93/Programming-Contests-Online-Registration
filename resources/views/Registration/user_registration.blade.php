@@ -16,14 +16,15 @@
 		<div class="col-sm-8"></div>
 			 <div class="col-sm-3">
 		  		<h3 align="center">Registration Form</h3>
+		  	</div>
+		</div> 	
 
-		  	 </div>
-	  	</div>  
+   
 	<div class="row">
 		<div class="col-sm-1"></div>
 		   	<div class="col-sm-5"> 
 			   		<div class="jumbotron">
-				    <h2>Welcome to registration page</h2>  <br>    
+				    <h2>Welcome to Registration page</h2>  <br>    
 				    <p>Fill the data correctly and wait for admin's confirmation.</p>
 				    <p>Already have an account? try <a href="#" data-toggle="modal" data-target="#signinModal">Sign in</a></p>
 				</div>
