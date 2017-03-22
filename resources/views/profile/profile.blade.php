@@ -14,7 +14,7 @@
 @section('ContentOfBody')
 
 {{-- Main Profile View --}}
-<div class="container pro_cls">
+<div class="container">
 	<div class=" col-sm-12 pro_head clearfix">
 	<h2 class="pull-left"> <strong>Rakul's</strong> Profile</h2>
   <h2 class="pull-right">
