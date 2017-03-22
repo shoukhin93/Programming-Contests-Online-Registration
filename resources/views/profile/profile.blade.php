@@ -10,8 +10,10 @@
 	<link href="{{ asset('css/profile.css') }}" rel="stylesheet" >
 @endsection
 
+
+@section('ContentOfBody')
+
 {{-- Main Profile View --}}
-@section('ContentOfBody') 
 <div class="container pro_cls">
 	<div class=" col-sm-12 pro_head">
 	<h2> <strong>Rakul's</strong> Profile</h2>	
@@ -52,12 +54,55 @@
         </table>
 	</div>
 </div>
-<div class="container">
+
+{{-- This Section For COntest Log --}}
+<div class="container"> 
 	<div class="col-sm-12 pro_head">
 	<h2>Contest Activity</h2>	
 	</div>
-  <div class="col-sm-12">
-  
+  <div class="col-sm-12 contest_table">
+    <table class="table contest_info_table">
+      <thead>
+      <tr>
+        <td>Contest ID</td>
+        <td>Team Name</td>
+        <td>Rank</td>
+      </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><a href="#">#RU1</a></td>
+          <td>RU_BottomUp</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td><a href="#">#RU2</a></td>
+          <td>RU_BottomUp</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><a href="#">#RU2</a></td>
+          <td>RU_BottomUp</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><a href="#">#RU2</a></td>
+          <td>RU_BottomUp</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><a href="#">#RU322</a></td>
+          <td>RU_Mala_Boro_Name</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    </br>
+    </br>
   </div>
 </div>
 @endsection 
