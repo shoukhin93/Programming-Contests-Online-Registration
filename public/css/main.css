@@ -22,6 +22,7 @@ hr{
 }
 .my-nav .my-menu li a {
     color: white;
+    font-family: 'Ropa Sans', sans-serif;
 }
 .my-nav .my-menu li a:hover{
     background: #317cd3;
@@ -64,4 +65,5 @@ footer{
     position: relative;
     bottom: 0;
     left: 0;
+    font-family: 'Jim Nightshade', cursive;
 }
