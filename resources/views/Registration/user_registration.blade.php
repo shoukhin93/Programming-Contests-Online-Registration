@@ -20,8 +20,7 @@
    <div class="jumbotron">
     <h2>Welcome to registration page</h2>  <br>    
     <p>Fill the data correctly and wait for admin to confirm your registration</p>
-    <p>Already have an account? try 
-    <button class="btn btn-primary">sign in</button></p>
+    <p>Already have an account? try <a href="#" data-toggle="modal" data-target="#signinModal">Sign in</a></p>
   </div>
   </div>
   <div class="col-sm-2"></div>
@@ -64,5 +63,10 @@
 	</div> 
 	</div>
 	</div>
+
+
+@include('login.login')
+
+
 @endsection
   
