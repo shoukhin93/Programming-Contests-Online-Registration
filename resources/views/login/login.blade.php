@@ -1,4 +1,4 @@
-   <!-- This Model For USER button -->
+   <!-- Modal For Login-->
     <div class="modal fade" id="signinModal" role="dialog">
       <div class="modal-dialog">
         <div  class="modal-content">
@@ -6,7 +6,7 @@
             <button  type="button" class="close" data-dismiss="modal">X</button>
             <h4 class="modal-text"><center>Log in with vallid data</center></h4>
           </div>
-          <div  class="modal-body">
+          <div  class="modal-body">         
             <form >
               <div class="form-group">
                 <input type="text" class="form-control" id="userID" name="userID" maxlength="10" placeholder="User ID">
@@ -19,7 +19,7 @@
                   <span class="glyphicon glyphicon-ok-sign"> LogIn</span>
                 </button>
               </div>
-            </form>
+            </form>        
           </div>
         </div>
       </div>
