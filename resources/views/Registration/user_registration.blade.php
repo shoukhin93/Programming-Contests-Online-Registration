@@ -25,8 +25,7 @@
 
    
 	<div class="row">
-		<div class="col-sm-1"></div>
-		   	<div class="col-sm-5"> 
+		   	<div class="col-sm-6"> 
 			   		<div class="jumbotron">
 				    <h2 align="center">Welcome to Registration page</h2>  <br>    
 				    <p>Fill the data correctly and wait for admin's confirmation.</p>
@@ -55,6 +54,14 @@
 		                  <option style="color: black" value="4">4th Year</option>
 		                </select>
 		        </div>
+		        <div class="form-group">
+		        <label for = male>Gender : </label>
+		        <label class="radio-inline">
+			      <input type="radio" name="gender">Male</label>
+			    <label class="radio-inline">
+			      <input type="radio" name="gender">Female</label>
+			    
+			    </div>
 		          
 		        <div class="form-group">
 				   <input type="email" class="form-control" id="email" placeholder="Enter Email">

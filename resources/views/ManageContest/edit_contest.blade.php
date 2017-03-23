@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('title')
-	Arrange Contest
+	Modify Contest
 @endsection 
 
 @section('OuterInclude')
@@ -19,7 +19,7 @@
 		<div class="col-sm-8"></div>
 			<div class=" col-sm-4">
 				<div class="head">
-			    	<h2 align="center">Contest Arrangement</h2>
+			    	<h2 align="center">Modify Contest info</h2>
 			 	</div>
 	  		</div>
 		
@@ -30,7 +30,7 @@
 
 		   	<div class="col-sm-6"> 
 			   		<div class="jumbotron">
-				    <h2 align="center">Arrange contest by filling the form</h2>  <br>   				    
+				    <h2 align="center">Modify contest by updating the form</h2>  <br>   				    
 					<p>No more than one running  contest registration process can be arranged at a time</p><br>
 					<p align="center">Happy Coding! :)</p>
 				</div>
@@ -53,7 +53,10 @@
 				<textarea class="form-control" rows="10" id="description" placeholder="description(optional)"></textarea>
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-primary btn-block">Add Contest</button>
+				<button type="submit" class="btn btn-primary btn-block">Save</button>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block">Prospond</button>
 			</div>
 		</form>
 			

@@ -9,8 +9,9 @@
   <body>
      @include('partials.MainPartials._navigation')
       <hr>
+    
       <div id="ContentOfBody" class="container-fluid">
-        @yield('ContentOfBody')
+         @yield('ContentOfBody')
       </div>
       <footer class="clearfix">
             <hr>

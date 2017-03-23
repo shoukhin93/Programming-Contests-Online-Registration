@@ -10,7 +10,6 @@
 <link href="{{ asset('css/main.css') }}" rel="stylesheet" >
 <link href="{{ asset('css/bootstrap-dropdownhover.min.css') }}" rel="stylesheet" >
 <link href="{{ asset('css/animate.min.css') }}" rel="stylesheet" >
-<link href="{{ asset('css/home.css') }}" rel="stylesheet" >
 <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
