@@ -55,6 +55,14 @@
 		                  <option style="color: black" value="4">4th Year</option>
 		                </select>
 		        </div>
+		        <div class="form-group">
+		        <label for = male>Gender : </label>
+		        <label class="radio-inline">
+			      <input type="radio" name="male">Male</label>
+			    <label class="radio-inline">
+			      <input type="radio" name="female">Female</label>
+			    
+			    </div>
 		          
 		        <div class="form-group">
 				   <input type="email" class="form-control" id="email" placeholder="Enter Email">

@@ -39,3 +39,8 @@ Route::get('edit_profile',function(){
 	return view('profile.profileUpdate');
 
 });
+
+Route::get('edit_contest',function(){
+	return view('ManageContest.edit_contest');
+
+});
