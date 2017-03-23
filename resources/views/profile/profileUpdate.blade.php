@@ -8,6 +8,7 @@
 
 @section('OuterInclude')
   <link href="{{ asset('css/profile_update.css') }}" rel="stylesheet" >
+  <script src="{{ asset('js/profile_update.js') }}"></script>
 @endsection
 
 
@@ -20,8 +21,16 @@
   </div>
 
   <div class="col-sm-4 pro_image" align="center">
-    <img  id="" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
-    <button type="button" class="btn btn-default" style="width:200px;">Upload new picture</button>
+    <img  id="ProPicUp" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
+    <button type="button" class=" browse btn btn-default" style="width:200px;">Upload new picture</button>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <input type="file" name="fileToUpload" id="fileToUpload" class="file" accept="image/jpg, image/jpeg, image/png">
+      </div>
+      <button id="SavePropic" class="btn btn-primary" style="width:200px;" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+  </form>
+
   </div>
 
   <div class="col-sm-8 pro_info">
