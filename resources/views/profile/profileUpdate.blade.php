@@ -19,8 +19,9 @@
     <h2>Update Profie</h2>
   </div>
 
-  <div class="col-sm-4" align="right">
-    <img src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail" alt="Profile Pic" width="200" height="200">
+  <div class="col-sm-4 pro_image" align="center">
+    <img  id="" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
+    <button type="button" class="btn btn-default" style="width:200px;">Upload new picture</button>
   </div>
 
   <div class="col-sm-8 pro_info">

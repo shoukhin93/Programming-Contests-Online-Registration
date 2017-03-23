@@ -11,6 +11,17 @@
 	/*font-family: ‘Times New Roman’, Times, serif;*/ 
 	font-size: 30px;
 }
+
+.pro_image{
+	font-family: Georgia, Serif;
+
+}
+
+.pro_image img{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
 .pro_info{
 	text-align: left;
 }
@@ -25,10 +36,14 @@
 	font-family: Georgia, Serif;
 	/*font-family: ‘Times New Roman’, Times, serif;*/
 }
+
 /*Media query Section.*/
 
 @media (max-width: 768px) {
     .pro_head h2{
 		font-size: 22px;
+	}
+	.pro_info h3{
+		font-size: 20px;
 	}
 }
