@@ -25,8 +25,7 @@
 
    
 	<div class="row">
-		<div class="col-sm-1"></div>
-		   	<div class="col-sm-5"> 
+		   	<div class="col-sm-6"> 
 			   		<div class="jumbotron">
 				    <h2 align="center">Welcome to Registration page</h2>  <br>    
 				    <p>Fill the data correctly and wait for admin's confirmation.</p>
