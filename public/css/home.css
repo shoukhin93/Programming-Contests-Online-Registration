@@ -8,8 +8,8 @@ body{
 .my-nav{
     background: rgba(0,0,0,0.2);
 }
-
 /*resetting the layout page*/
+
 .cover{
     background: url('/image/a.jpg') top left no-repeat;
     background-size: cover;
