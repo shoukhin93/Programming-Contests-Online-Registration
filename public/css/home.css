@@ -1,0 +1,23 @@
+.home_head{
+    text-align: center;
+    color: black;
+    height: 100%;
+    border: none;
+}
+img{
+    background-size: cover;
+    margin: 0 auto;
+}
+.home_head h1{
+    color: black;
+    font-size: 50px;
+    text-shadow: 1px 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home_head p1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body_content{
+    display: block;
+}

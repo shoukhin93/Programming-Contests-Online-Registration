@@ -16,11 +16,6 @@ hr{
     border: none;
 }
 
-#ContentOfBody{
-   padding-top: 10px;
-   height: auto; 
-}
-
 .my-nav{
     background: #4395f4;
     border-radius: 0;
@@ -38,15 +33,18 @@ hr{
     background: #317cd3;
     color: white;
     font-size: 110%;
+    border-radius: 10px;
 }
 
 .my-nav .my-menu .dropdown .dropdown-menu{
     background: #4395f4;
     color: white;
+   
 }
 
 .my-nav .my-menu .dropdown li a:hover{
     background: #317cd3;
+    border-radius: 10px;
     color:white;
 }
 
