@@ -57,9 +57,9 @@
 		        <div class="form-group">
 		        <label for = male>Gender : </label>
 		        <label class="radio-inline">
-			      <input type="radio" name="male">Male</label>
+			      <input type="radio" name="gender">Male</label>
 			    <label class="radio-inline">
-			      <input type="radio" name="female">Female</label>
+			      <input type="radio" name="gender">Female</label>
 			    
 			    </div>
 		          
