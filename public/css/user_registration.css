@@ -8,5 +8,17 @@
 .modal-text{
 	color: white
 }
+.head{
+	margin-bottom: 20px;
+	width: 100%;
+	border-bottom-style: solid; 
+	border-color: #357ed3;
+}
+
+.head h2{
+	font-family: Georgia, Serif;
+	/*font-family: ‘Times New Roman’, Times, serif;*/ 
+	font-size: 30px;
+}
 
 
