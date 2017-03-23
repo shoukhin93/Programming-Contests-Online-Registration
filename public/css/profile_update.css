@@ -11,8 +11,20 @@
 	/*font-family: ‘Times New Roman’, Times, serif;*/ 
 	font-size: 30px;
 }
-
-
+.pro_info{
+	text-align: left;
+}
+.pro_info h3{
+	font-family: Georgia, Serif;
+	-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119;
+    padding-bottom: 5px;
+}
+.pro_info label{
+	font-family: Georgia, Serif;
+	/*font-family: ‘Times New Roman’, Times, serif;*/
+}
 /*Media query Section.*/
 
 @media (max-width: 768px) {
