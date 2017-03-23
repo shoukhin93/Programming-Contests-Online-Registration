@@ -27,3 +27,6 @@ Route::get('/', function () {
 Route::get('profile',function(){
 	return view('profile.profile');
 });
+Route::get('edit_profile',function(){
+	return view('profile.profileUpdate');
+});

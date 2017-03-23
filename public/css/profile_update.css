@@ -1,0 +1,22 @@
+.pro_head{
+	margin-bottom: 20px;
+	padding-left: 5px;
+	width: 100%;
+	border-bottom-style: solid; 
+	text-align: left;
+	border-color: #357ed3;
+}
+.pro_head h2{
+	font-family: Georgia, Serif;
+	/*font-family: ‘Times New Roman’, Times, serif;*/ 
+	font-size: 30px;
+}
+
+
+/*Media query Section.*/
+
+@media (max-width: 768px) {
+    .pro_head h2{
+		font-size: 22px;
+	}
+}
