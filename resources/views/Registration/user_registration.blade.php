@@ -10,28 +10,32 @@
 
 @section('ContentOfBody')
 
+<div class="container">
 <div class = "registrationBody">
 
 	<div class="row">
 		<div class="col-sm-8"></div>
-			 <div class="col-sm-3">
-		  		<h3 align="center">Registration Form</h3>
-		  	</div>
-		</div> 	
+			<div class=" col-sm-4">
+				<div class="head">
+			    	<h2 align="center">Registration form</h2>
+			 	</div>
+	  		</div>
+		
+	</div>	
 
    
 	<div class="row">
 		<div class="col-sm-1"></div>
 		   	<div class="col-sm-5"> 
 			   		<div class="jumbotron">
-				    <h2>Welcome to Registration page</h2>  <br>    
+				    <h2 align="center">Welcome to Registration page</h2>  <br>    
 				    <p>Fill the data correctly and wait for admin's confirmation.</p>
 				    <p>Already have an account? try <a href="#" data-toggle="modal" data-target="#signinModal">Sign in</a></p>
 				</div>
 			</div>
 	  
 	  <div class="col-sm-2"></div>
-	   <div class="col-sm-3">   
+	   <div class="col-sm-4">   
 		  <form>
 				<div class="form-group">
 				    <input type="text" class="form-control" id="userFirstName" placeholder="First Name">
@@ -70,6 +74,7 @@
 
 		</div> 
 	</div>
+</div>
 </div>
 
 
