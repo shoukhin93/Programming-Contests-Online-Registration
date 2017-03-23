@@ -64,16 +64,7 @@
 				  
 				<div class="form-group">
 				    <input type="text" class="form-control" id="userContactNo" placeholder="Contact No.">
-				</div>
-					<div class="form-group">
-						<label for="male">Gender : </label>
-					    <label class="radio-inline">
-				           <input type="radio" name="male">Male
-				        </label>
-				    	<label class="radio-inline">
-				      		<input type="radio" name="female">Female
-				    	</label>
-			    	</div>    	
+				</div>   	
 				  <button type="submit" class="btn btn-primary btn-block">Submit</button>
 			</form>
 
