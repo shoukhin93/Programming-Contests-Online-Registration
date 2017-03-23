@@ -37,6 +37,15 @@
 	/*font-family: ‘Times New Roman’, Times, serif;*/
 }
 
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
+#SavePropic{
+	visibility: hidden;
+}
+
 /*Media query Section.*/
 
 @media (max-width: 768px) {

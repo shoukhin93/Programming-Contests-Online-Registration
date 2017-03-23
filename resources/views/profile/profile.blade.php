@@ -8,6 +8,7 @@
 
 @section('OuterInclude')
 	<link href="{{ asset('css/profile.css') }}" rel="stylesheet" >
+  <script src="{{ asset('js/profile.js') }}"></script>
 @endsection
 
 
@@ -108,14 +109,6 @@
     </br>
   </div>
 </div>
-
-
-<script>
-  $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-  });
-</script>
-
 @endsection 
 
 	
