@@ -30,6 +30,11 @@ Route::get('profile',function(){
 	return view('profile.profile');
 });
 
+
 Route::get('arrange_contest', function () {
     return view('ManageContest.addContest');
+
+Route::get('edit_profile',function(){
+	return view('profile.profileUpdate');
+
 });
