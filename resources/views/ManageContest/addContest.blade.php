@@ -42,8 +42,11 @@
 
 		<form >
 			<div class="form-group">
+				<input class="form-control" type="text" name="date" id="cotestName" placeholder="Contest Name" >
+			</div>
+			<div class="form-group">
 				<label for="date">Enter Date & time:</label>
-				<input class="form-control" type="datetime-local"" name="date" id="date" placeholder="Enter Date" >
+				<input class="form-control" type="datetime-local" name="date" id="date" placeholder="Enter Date" >
 			</div>	
 
 

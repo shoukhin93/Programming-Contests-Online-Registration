@@ -16,8 +16,9 @@
             <h1 align="center">RU programming contest - 01</h1>
             <h2 align="center">Date: 11/11/1111</h2>
 
-            <h3 align="center">Time : 10:00 AM</h3>
-
+            <div class="head1">
+                <h3 align="center">Time : 10:00 AM</h3>
+            </div>
             <div class="row">
                 <div class="col-sm-8"></div>
                 <div class=" col-sm-4">
