@@ -15,14 +15,13 @@
 
 	<div class="row">
 		<div class="col-sm-8"></div>
-			<div class=" col-sm-4">
+			<div class="col-sm-4">
 				<div class="head">
 			    	<h2 align="center">Registration form</h2>
 			 	</div>
 	  		</div>
 		
 	</div>	
-
    
 	<div class="row">
 		   	<div class="col-sm-6"> 
