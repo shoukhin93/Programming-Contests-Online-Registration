@@ -49,3 +49,7 @@ Route::get('contest_registration',function(){
 	return view('ManageContest.contest_registration');
 
 });
+
+Route::get('member_request',function(){
+	return view('Registration.member_request');
+});
