@@ -1,24 +1,25 @@
-.registrationBody{
-	background: white;
+.registrationBody {
+    background: white;
 }
 
-.modal-head{
-	background-color: #4395f4
-}
-.modal-text{
-	color: white
-}
-.head{
-	margin-bottom: 20px;
-	width: 100%;
-	border-bottom-style: solid; 
-	border-color: #357ed3;
+.modal-head {
+    background-color: #4395f4
 }
 
-.head h2{
-	font-family: Georgia, Serif;
-	/*font-family: ‘Times New Roman’, Times, serif;*/ 
-	font-size: 30px;
+.modal-text {
+    color: white
 }
 
+.head {
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: #357ed3;
+}
 
+.head h2 {
+    font-family: Georgia, Serif;
+    /*font-family: ‘Times New Roman’, Times, serif;*/
+    font-size: 30px;
+    color: #6A5ACD;
+}
