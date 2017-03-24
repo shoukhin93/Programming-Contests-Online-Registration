@@ -21,14 +21,23 @@
   </div>
 
   <div class="col-sm-4 pro_image" align="center">
-    <img  id="ProPicUp" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
-    <button type="button" class=" browse btn btn-default" style="width:200px;">Upload new picture</button>
 
+   <h4>Current Profile Picture.</h4>
+    <img  id="ProPicUp" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
     <form action="#" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <input type="file" name="fileToUpload" id="fileToUpload" class="file" accept="image/jpg, image/jpeg, image/png">
       </div>
-      <button id="SavePropic" class="btn btn-primary" style="width:200px;" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+
+      <div class="input-group" style="width:220px;">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+          <input id="displayFileName" type="text" class="form-control" value="" readonly placeholder="Upload Image">
+          <span class="input-group-btn">
+            <button class="browse btn btn-primary" type="button"><i class="glyphicon glyphicon-folder-open"></i></button>
+          </span>
+        </div>
+
+      <button id="SavePropic" class="btn btn-primary " type="submit" style="width:220px;"><i class="glyphicon glyphicon-ok-sign"></i> Set as Profile</button>
   </form>
 
   </div>

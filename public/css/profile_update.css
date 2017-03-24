@@ -14,12 +14,8 @@
 
 .pro_image{
 	font-family: Georgia, Serif;
+	margin-top: 10px;
 
-}
-
-.pro_image img{
-	margin-top: 20px;
-	margin-bottom: 5px;
 }
 
 .pro_info{
@@ -43,6 +39,7 @@
 }
 
 #SavePropic{
+	margin-top: 5px;
 	visibility: hidden;
 }
 
