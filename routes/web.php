@@ -44,3 +44,8 @@ Route::get('edit_contest',function(){
 	return view('ManageContest.edit_contest');
 
 });
+
+Route::get('contest_registration',function(){
+	return view('ManageContest.contest_registration');
+
+});

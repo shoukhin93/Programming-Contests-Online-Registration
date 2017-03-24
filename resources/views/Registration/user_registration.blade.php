@@ -55,7 +55,6 @@
 		                </select>
 		        </div>
 		        <div class="form-group">
-		        <label for = male>Gender : </label>
 		        <label class="radio-inline">
 			      <input type="radio" name="gender">Male</label>
 			    <label class="radio-inline">
