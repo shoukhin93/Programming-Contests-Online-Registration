@@ -29,7 +29,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 
@@ -38,7 +38,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 		<div class="col-sm-3">
@@ -46,7 +46,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 		<div class="col-sm-3">
@@ -54,7 +54,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 		<div class="col-sm-3">
@@ -62,7 +62,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 		<div class="col-sm-3">
@@ -70,7 +70,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 		<div class="col-sm-3">
@@ -78,7 +78,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 		<div class="col-sm-3">
@@ -86,7 +86,7 @@
 				<h2><strong>ID:</strong>14025423</h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4>Mobile: <i>01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
 			</div>
 		</div>
 	</div>
