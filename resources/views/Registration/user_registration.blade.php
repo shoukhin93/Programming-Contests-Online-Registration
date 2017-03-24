@@ -14,14 +14,13 @@
 <div class = "registrationBody">
 
 	<div class="row">
-		<div class="col-sm-8"></div>
+		<div class="col-sm-7"></div>
 			<div class=" col-sm-4">
 				<div class="head">
 			    	<h2 align="center">Registration form</h2>
 			 	</div>
 	  		</div>
-		
-	</div>	
+		</div>	
 
    
 	<div class="row">
@@ -33,7 +32,8 @@
 				</div>
 			</div>
 	  
-	  <div class="col-sm-2"></div>
+	  <div class=" col-sm-1"></div>
+	  
 	   <div class="col-sm-4">   
 		  <form>
 				<div class="form-group">
