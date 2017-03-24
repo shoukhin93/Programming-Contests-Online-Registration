@@ -8,6 +8,10 @@ body{
 .my-nav{
     background: rgba(0,0,0,0.2);
 }
+.my-nav .my-menu .dropdown .dropdown-menu{
+    background: rgba(0,0,0,0.2);
+}
+
 /*resetting the layout page*/
 
 .cover{
