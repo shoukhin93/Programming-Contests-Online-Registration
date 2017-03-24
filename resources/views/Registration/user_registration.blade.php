@@ -14,11 +14,15 @@
 <div class = "registrationBody">
 
 	<div class="row">
-	
-
+		<div class="col-md-offset-7 col-md-5">
+			<div class="head">
+				<h2 align="center">Registration form</h2>
+			</div>
+		</div>
+	</div>
    
 	<div class="row">
-		   	<div class="col-sm-6"> 
+		   	<div class="col-md-6"> 
 			   		<div class="jumbotron">
 				    <h2 align="center">Welcome to Registration page</h2>  <br>    
 				    <p>Fill the data correctly and wait for admin's confirmation.</p>
@@ -26,9 +30,7 @@
 				</div>
 			</div>
 	  
-	  <div class=" col-sm-1"></div>
-	  
-	   <div class="col-sm-4">   
+	   <div class="col-md-5 col-md-offset-1">   
 		  <form>
 				<div class="form-group">
 				    <input type="text" class="form-control" id="userFirstName" placeholder="First Name">
