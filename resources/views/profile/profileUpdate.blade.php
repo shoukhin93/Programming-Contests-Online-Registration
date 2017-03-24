@@ -3,7 +3,7 @@
 {{-- Including  required CSS/JS/Other --}}
 
 @section('title')
-  Profile
+  Profile Update
 @endsection
 
 @section('OuterInclude')
