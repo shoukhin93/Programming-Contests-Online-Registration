@@ -30,7 +30,7 @@
 				<h2><strong> <i>14025423</i></strong></h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
 				<div class="mem_btn_div">
 					<button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip" data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
 					<button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i></button>
@@ -43,7 +43,7 @@
 				<h2><strong> <i>14025424</i></strong></h2>
 				<h3>Rakul Preet Sing</h3>
 				<h4>Third Year Student.</h4>
-				<h4><span class="glyphicon glyphicon-phone-alt"></span <i> : 01915770274</i></h4>
+				<h4><span class="glyphicon glyphicon-phone-alt"></span <i>: 01915770274</i></h4>
 				<div class="mem_btn_div">
 					<button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip" data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
 					<button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip" data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i></button>

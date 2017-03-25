@@ -49,7 +49,10 @@
 }
 
 .mem_box h4{
-	font-family: Georgia, Serif;
+	/*font-family: Georgia, Serif;*/
+	/*font-family: ‘Courier New’, Courier, monospace;*/
+	font-family: ‘Lucida Console’, Monaco, monospace;
+	/*font-family: ‘Arial Narrow’, sans-serif;*/
 	border-bottom: 1px solid rgb(199,202,204);
 	padding-bottom: 8px;
 }
