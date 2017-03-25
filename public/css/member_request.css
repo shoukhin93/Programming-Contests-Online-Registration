@@ -17,7 +17,8 @@
 	height: 270px;
 	width: 100%;
 	background-color: white;
-	border: 1px solid rgb(85,167,154);
+	border:1px solid rgb(0,173,187);
+	/*border: 1px solid rgb(85,167,154);*/
 	-webkit-box-shadow: 1px 1px 1px 1px #E0E0E0;
     -moz-box-shadow: 1px 1px 1px 1px #E0E0E0;
     box-shadow: 1px 1px 1px 1px #E0E0E0;
@@ -39,7 +40,8 @@
 	padding-top: 22px;
 	padding-bottom: 22px;
 	text-align: center;
-	background-color: rgb(85,167,154);
+	background-color: rgb(0,173,187);
+	/*background-color: rgb(85,167,154);*/
 	color: white;
 	font-family: Georgia, Serif;
 	font-style: italic;
@@ -49,12 +51,12 @@
 .mem_box h4{
 	font-family: Georgia, Serif;
 	border-bottom: 1px solid rgb(199,202,204);
-	padding-bottom: 5px;
+	padding-bottom: 8px;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 10px 50px;
+        padding: 10px 30px;
     }
 }
 
