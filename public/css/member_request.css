@@ -7,20 +7,20 @@
 	margin-bottom: 15px;
 }
 
-/*.container {
-    padding: 60px 120px;
-}*/
+.container {
+    padding: 10px 70px;
+}
 
 .mem_box{
 	text-align: center;
-	margin:10px auto;
-	height: 250px;
+	margin:20px auto;
+	height: 270px;
 	width: 100%;
 	background-color: white;
-	border: 1px solid rgb(0,173,187);
-	-webkit-box-shadow: 0 6px 6px -6px #0E1119;
-    -moz-box-shadow: 0 6px 6px -6px #0E1119;
-    box-shadow: 0 6px 6px -6px #0E1119;
+	border: 1px solid rgb(85,167,154);
+	-webkit-box-shadow: 1px 1px 1px 1px #E0E0E0;
+    -moz-box-shadow: 1px 1px 1px 1px #E0E0E0;
+    box-shadow: 1px 1px 1px 1px #E0E0E0;
 }
 
 .mem_box h2{
@@ -39,7 +39,7 @@
 	padding-top: 22px;
 	padding-bottom: 22px;
 	text-align: center;
-	background-color: rgb(0,173,187);
+	background-color: rgb(85,167,154);
 	color: white;
 	font-family: Georgia, Serif;
 	font-style: italic;
@@ -54,7 +54,7 @@
 
 @media (max-width: 768px) {
     .container {
-        padding: 50px 40px;
+        padding: 10px 50px;
     }
 }
 
