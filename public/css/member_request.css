@@ -14,7 +14,7 @@
 .mem_box{
 	text-align: center;
 	margin:20px auto;
-	height: 270px;
+	height: 275px;
 	width: 100%;
 	background-color: white;
 	border:1px solid rgb(0,173,187);
@@ -53,6 +53,20 @@
 	border-bottom: 1px solid rgb(199,202,204);
 	padding-bottom: 8px;
 }
+.mem_box .mem_btn_div{
+	padding-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.mem_box .mem_btn_div button{
+	color: white;
+	background-color: rgb(0,173,187);
+	border-radius: 22px;
+	width: 42px;
+	height: 42px;
+}
+
+
 
 @media (max-width: 768px) {
     .container {
