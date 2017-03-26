@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav my-menu">
                 <li class="Home"><a href="home">Home</a></li>
                 <li class="Contests"><a href="#">Contests</a></li>
-                <li class="Results"><a href="registered_team">Results</a></li>
+                <li class="Results"><a href="contest_result">Results</a></li>
                 <!--Admin dropdown starts -->
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button"
@@ -29,7 +29,7 @@
                         <li><a href="member_request">Accept Request</a></li>
                     </ul>
                 </li> <!--Admin dropdown ends -->
-                <li class="accept_team"><a href="contest_result">Accepted Team</a></li>
+                <li class="accept_team"><a href="registered_team">Accepted Team</a></li>
                 <li class="Search">
                     <form class="navbar-form">
                         <div class="form-group">
