@@ -20,6 +20,3 @@ th{
 td,th{
     text-align: center;
 }
-.table-bordered>tbody>tr>td{
-    border: 1px solid #4395f4;
-}
