@@ -71,6 +71,8 @@
 
 
 
+/*Media Qury Section*/
+
 @media (max-width: 768px) {
     .container {
         padding: 10px 30px;
