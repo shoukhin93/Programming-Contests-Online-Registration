@@ -5,7 +5,7 @@
 @endsection
 
 @section('OuterInclude')
-<link href="{{ asset('css/registered_team.css') }}" rel="stylesheet">
+<link href="{{ asset('css/list.css') }}" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 @endsection
 

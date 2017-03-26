@@ -6,9 +6,9 @@ table{
 th{ 
     background: #414141;
     color: white;
-    font-family: 'Times New Roman', Times, serif !important; 
-    font-size: 20px !important;
-    letter-spacing: 2px !important;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px ;
+    letter-spacing: 2px;
 }
 .accpeted{
     color: #00aa00;
@@ -27,4 +27,20 @@ td,th{
 	color: rgb(41,43,44);
 	font-family: Georgia, Serif;
 	margin-bottom: 15px;
+}
+@media (max-width: 767px){
+    table{
+        font-size: 12px;
+    }
+    th{
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px){
+    table{
+        font-size: 10px;
+    }
+    th{
+        font-size: 8px;
+    }
 }
