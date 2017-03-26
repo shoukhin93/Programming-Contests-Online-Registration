@@ -10,7 +10,10 @@ th{
     font-size: 20px !important;
     letter-spacing: 2px !important;
 }
-.team_name{
+.accpeted{
+    color: #00aa00;
+}
+.accpeted,.team_name{
     position: relative;
     top:30px;
 }
