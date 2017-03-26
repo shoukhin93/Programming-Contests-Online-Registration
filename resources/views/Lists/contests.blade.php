@@ -50,6 +50,21 @@
 			<span class="pull-right label label-info">Finished</span>
 			<p class="list-group-item-text">26-Mar-2017 11.30 AM</p>
 		</a>
+		<a href="#" class="list-group-item">
+			<h3 class="list-group-item-heading">Rajshahi University Inter Dept Programming Contest</h3>
+			<span class="pull-right label label-info">Finished</span>
+			<p class="list-group-item-text">26-Mar-2017 11.30 AM</p>
+		</a>
+		<a href="#" class="list-group-item">
+			<h3 class="list-group-item-heading">Rajshahi University Inter Dept Programming Contest</h3>
+			<span class="pull-right label label-info">Finished</span>
+			<p class="list-group-item-text">26-Mar-2017 11.30 AM</p>
+		</a>
+		<a href="#" class="list-group-item">
+			<h3 class="list-group-item-heading">Rajshahi University Inter Dept Programming Contest</h3>
+			<span class="pull-right label label-info">Finished</span>
+			<p class="list-group-item-text">26-Mar-2017 11.30 AM</p>
+		</a>
 	</div>
 </div>
 @endsection 
