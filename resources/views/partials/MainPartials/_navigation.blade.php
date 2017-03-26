@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="fullNavbar">
             <!--Left navigation start -->
             <ul class="nav navbar-nav my-menu">
-                <li class="Home"><a href="#">Home</a></li>
+                <li class="Home"><a href="home">Home</a></li>
                 <li class="Contests"><a href="#">Contests</a></li>
                 <li class="Results"><a href="#">Results</a></li>
                 <!--Admin dropdown starts -->
@@ -24,9 +24,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button"
                        aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Add Contest</a></li>
-                        <li><a href="#">Modify Contest</a></li>
-                        <li><a href="#">Accept Request</a></li>
+                        <li><a href="arrange_contest">Add Contest</a></li>
+                        <li><a href="edit_contest">Modify Contest</a></li>
+                        <li><a href="member_request">Accept Request</a></li>
                     </ul>
                 </li> <!--Admin dropdown ends -->
                 <li class="Search">
