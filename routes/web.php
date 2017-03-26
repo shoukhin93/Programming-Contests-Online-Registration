@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('home',function(){
-	return view('Home.home');
+Route::get('home', function () {
+    return view('Home.home');
 });
 
 Route::get('main', function () {
@@ -23,11 +23,11 @@ Route::get('user_registration', function () {
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home.home');
 });
 
-Route::get('profile',function(){
-	return view('profile.profile');
+Route::get('profile', function () {
+    return view('profile.profile');
 });
 
 
@@ -35,24 +35,24 @@ Route::get('arrange_contest', function () {
     return view('ManageContest.addContest');
 });
 
-Route::get('edit_profile',function(){
-	return view('profile.profileUpdate');
+Route::get('edit_profile', function () {
+    return view('profile.profileUpdate');
 
 });
 
-Route::get('edit_contest',function(){
-	return view('ManageContest.edit_contest');
+Route::get('edit_contest', function () {
+    return view('ManageContest.edit_contest');
 
 });
 
-Route::get('contest_registration',function(){
-	return view('ManageContest.contest_registration');
+Route::get('contest_registration', function () {
+    return view('ManageContest.contest_registration');
 
 });
 
-Route::get('member_request',function(){
-	return view('Registration.member_request');
+Route::get('member_request', function () {
+    return view('Registration.member_request');
 });
-Route::get('registered_team',function(){
-	return view('Lists.registered_team');
+Route::get('registered_team', function () {
+    return view('Lists.registered_team');
 });
