@@ -53,3 +53,6 @@ Route::get('contest_registration',function(){
 Route::get('member_request',function(){
 	return view('Registration.member_request');
 });
+Route::get('registered_team',function(){
+	return view('Lists.registered_team');
+});

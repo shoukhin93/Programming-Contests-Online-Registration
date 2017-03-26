@@ -64,10 +64,10 @@ button{
 @media (max-width: 640px)
 {
     .cover-text{
-    text-align: center;
-    color: white;
-    display: table-cell;
-    vertical-align: middle;
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
     }
     .cover-text h1{
         margin: 0;
