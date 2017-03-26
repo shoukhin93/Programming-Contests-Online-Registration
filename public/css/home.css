@@ -20,13 +20,14 @@ body{
     display: table;
     padding: 0 20%;
     box-shadow: inset 0 0 200px #4395f4; 
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 .cover-text{
     text-align: center;
     color: white;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle; 
 }
 .cover-text h1{
     margin: 0;
