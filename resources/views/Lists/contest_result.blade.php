@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 mem_head clearfix">
-                    <h2>Practice Contest 01</h2>
+                    <h2>Practice Contest 01 Result</h2>
                     <p>Date : <time>14.06.2017</time></p>
                 </div>
             </div>
@@ -32,6 +32,72 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <tr>
+                                <td class="team_name">RU_TITANS</td>
+                                <td>
+                                    <p>Tanvir Ahmod Shoukhin</p>
+                                    <p>Jaggesher Mondal</p>
+                                    <p>Rajob Raihan Monmoy</p>
+                                </td>
+                                <td class="team_name">7</td>
+                                <td class="team_name">670</td>
+                                <td class="team_name">1</td>
+                            </tr>
+                            <tr>
+                                <td class="team_name">RU_TITANS</td>
+                                <td>
+                                    <p>Tanvir Ahmod Shoukhin</p>
+                                    <p>Jaggesher Mondal</p>
+                                    <p>Rajob Raihan Monmoy</p>
+                                </td>
+                                <td class="team_name">7</td>
+                                <td class="team_name">670</td>
+                                <td class="team_name">1</td>
+                            </tr>
+                            <tr>
+                                <td class="team_name">RU_TITANS</td>
+                                <td>
+                                    <p>Tanvir Ahmod Shoukhin</p>
+                                    <p>Jaggesher Mondal</p>
+                                    <p>Rajob Raihan Monmoy</p>
+                                </td>
+                                <td class="team_name">7</td>
+                                <td class="team_name">670</td>
+                                <td class="team_name">1</td>
+                            </tr>
+                            <tr>
+                                <td class="team_name">RU_TITANS</td>
+                                <td>
+                                    <p>Tanvir Ahmod Shoukhin</p>
+                                    <p>Jaggesher Mondal</p>
+                                    <p>Rajob Raihan Monmoy</p>
+                                </td>
+                                <td class="team_name">7</td>
+                                <td class="team_name">670</td>
+                                <td class="team_name">1</td>
+                            </tr>
+                            <tr>
+                                <td class="team_name">RU_TITANS</td>
+                                <td>
+                                    <p>Tanvir Ahmod Shoukhin</p>
+                                    <p>Jaggesher Mondal</p>
+                                    <p>Rajob Raihan Monmoy</p>
+                                </td>
+                                <td class="team_name">7</td>
+                                <td class="team_name">670</td>
+                                <td class="team_name">1</td>
+                            </tr>
+                            <tr>
+                                <td class="team_name">RU_TITANS</td>
+                                <td>
+                                    <p>Tanvir Ahmod Shoukhin</p>
+                                    <p>Jaggesher Mondal</p>
+                                    <p>Rajob Raihan Monmoy</p>
+                                </td>
+                                <td class="team_name">7</td>
+                                <td class="team_name">670</td>
+                                <td class="team_name">1</td>
+                            </tr>
                             <tr>
                                 <td class="team_name">RU_TITANS</td>
                                 <td>
