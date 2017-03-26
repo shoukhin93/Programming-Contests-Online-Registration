@@ -1,0 +1,22 @@
+table{
+    overflow: hidden;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+th{ 
+    background: #414141;
+    color: white;
+    font-family: 'Times New Roman', Times, serif !important; 
+    font-size: 20px !important;
+    letter-spacing: 2px !important;
+}
+.accpeted{
+    color: #00aa00;
+}
+.accpeted,.team_name{
+    position: relative;
+    top:30px;
+}
+td,th{
+    text-align: center;
+}
