@@ -42,7 +42,7 @@
 
 		<form >
 			<div class="form-group">
-				<input class="form-control" type="text" name="date" id="cotestName" placeholder="Contest Name" >
+				<input class="form-control" type="text" name="date" id="cotestName" placeholder="Contest Name">
 			</div>
 			<div class="form-group">
 				<label for="date">Enter Date & time:</label>

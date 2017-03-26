@@ -46,7 +46,7 @@
                         </div>
                         <div class="form-group">
                             <label for="date">Enter Date & time:</label>
-                            <input class="form-control" type="datetime-local"" name="date" id="date" placeholder="Enter
+                            <input class="form-control" type="datetime-local" name="date" id="date" placeholder="Enter
                             Date" >
                         </div>
 
