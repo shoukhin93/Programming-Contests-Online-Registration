@@ -17,7 +17,7 @@
             <!--Left navigation start -->
             <ul class="nav navbar-nav my-menu">
                 <li class="Home"><a href="home">Home</a></li>
-                <li class="Contests"><a href="#">Contests</a></li>
+                <li class="Contests"><a href="contests">Contests</a></li>
                 <li class="Results"><a href="#">Results</a></li>
                 <!--Admin dropdown starts -->
                 <li class="dropdown">
