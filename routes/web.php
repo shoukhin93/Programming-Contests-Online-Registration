@@ -60,3 +60,4 @@ Route::get('registered_team',function(){
 
 Route::get('contests',function(){
 	return view('Lists.contests');
+});
