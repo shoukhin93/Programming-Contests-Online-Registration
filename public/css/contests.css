@@ -1,3 +1,19 @@
-h1{
-	color: green;
+.mem_head{
+	text-align: left;
+	border-bottom: 2px solid rgb(199,202,204);
+	color: rgb(41,43,44);
+	font-family: Georgia, Serif;
+	/*margin-bottom: 15px;*/
+}
+.list-group{
+	margin-top: 10px;
+}
+
+.list-group a{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.list-group a h3{
+	font-size: 20px;
+	font-family: Georgia, Serif; 
 }
