@@ -70,6 +70,19 @@
 }
 
 
+.Pagination-section{
+	text-align:center;
+}
+.pagination li a{
+	padding-top: 8px;
+	font-size: 18px;
+	text-align: center;
+	margin-left: 3px;
+	margin-right: 3px;
+	height: 40px;
+	width: 40px;
+	border-radius: 22px;
+}
 
 /*Media Qury Section*/
 

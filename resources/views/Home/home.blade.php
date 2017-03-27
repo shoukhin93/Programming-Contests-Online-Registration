@@ -7,6 +7,7 @@
 @section('OuterInclude')
     <link href="{{ asset('css/user_registration.css') }}" rel="stylesheet"> <!--to decorate login modal -->
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/home.js') }}"></script>
 @endsection
 
 @section('ContentOfBody')
@@ -18,7 +19,7 @@
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.</p>
             <!--<img src="/image/home1.png" alt="HomePage Image" class="img-responsive"> -->
-
+             <div class="add"></div>
             <a href="#contestInformation" class="btn btn-danger" role="button">Click For More Details</a>
         </div>
     </div>
@@ -33,11 +34,8 @@
                 deserunt mollit anim id est laborum.</p>
 
             <a href="contest_registration" class="btn btn-success" role="button">Click For Registration</a>
+            <div class="add"></div>
         </div>
     </div>
 
-
-
-
-    <script src="{{ asset('js/home.js') }}"></script>
 @endsection

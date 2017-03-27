@@ -1,3 +1,50 @@
-h1{
-	color: green;
+.mem_head{
+	text-align: left;
+	border-bottom: 2px solid rgb(199,202,204);
+	color: rgb(41,43,44);
+	font-family: Georgia, Serif;
+	/*margin-bottom: 15px;*/
+}
+.list-group{
+	margin-top: 10px;
+}
+
+.list-group a{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.list-group a h3{
+	font-size: 23px;
+	/*font-family: Georgia, Serif;*/
+	/*font-family: Tahoma, Geneva, sans-serif;*/
+	/*font-family: ‘Times New Roman’, Times, serif;*/
+	/*font-family: ‘Courier New’, Courier, monospace;*/
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	/*font-family: Gill Sans / Gill Sans MT, sans-serif;*/
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+	
+}
+
+.Pagination-section{
+	text-align:center;
+}
+.pagination li a{
+	padding-top: 8px;
+	font-size: 18px;
+	text-align: center;
+	margin-left: 3px;
+	margin-right: 3px;
+	height: 40px;
+	width: 40px;
+	border-radius: 22px;
+}
+
+/*Media Query Section*/
+@media (max-width: 768px) {
+    .list-group a h3{
+		font-size: 18px;
+	}
+	.mem_head h2{
+    	font-size: 25px;
+    }
 }
