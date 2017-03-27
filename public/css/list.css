@@ -1,0 +1,46 @@
+table{
+    overflow: hidden;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+th{ 
+    background: #414141;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 20px ;
+    letter-spacing: 2px;
+}
+.accpeted{
+    color: #00aa00;
+}
+.accpeted,.team_name{
+    position: relative;
+    top:30px;
+}
+td,th{
+    text-align: center;
+}
+
+.mem_head{
+	text-align: center;
+	border-bottom: 2px solid rgb(199,202,204);
+	color: rgb(41,43,44);
+	font-family: Georgia, Serif;
+	margin-bottom: 15px;
+}
+@media (max-width: 767px){
+    table{
+        font-size: 12px;
+    }
+    th{
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px){
+    table{
+        font-size: 10px;
+    }
+    th{
+        font-size: 8px;
+    }
+}

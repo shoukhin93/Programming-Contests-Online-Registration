@@ -58,6 +58,10 @@ Route::get('registered_team',function(){
 	return view('Lists.registered_team');
 });
 
+Route::get('contest_result',function(){
+	return view('Lists.contest_result');
+});
+
 Route::get('contests',function(){
 	return view('Lists.contests');
 });
