@@ -22,12 +22,9 @@
                         <h2 align="center">Modify Contest info</h2>
                     </div>
                 </div>
-
             </div>
 
             <div class="row">
-
-
                 <div class="col-sm-6">
                     <div class="jumbotron">
                         <h2 align="center">Modify contest by updating the form</h2>  <br>
@@ -42,18 +39,34 @@
 
                     <form>
                         <div class="form-group">
-                            <input class="form-control" type="text" name="date" id="cotestName" placeholder="Contest Name" >
+                            <input class="form-control" type="text" name="date" id="cotestName"
+                                   placeholder="Contest Name">
                         </div>
                         <div class="form-group">
-                            <label for="date">Enter Date & time:</label>
-                            <input class="form-control" type="datetime-local" name="date" id="date" placeholder="Enter
-                            Date" >
+                            <label for="date">Contest's Date:</label>
+                            <input class="form-control" type="date" name="date" id="date" placeholder="Enter Date">
                         </div>
 
+                        <div class="form-group">
+                            <label for="startTime">Start Time:</label>
+                            <input class="form-control" type="time" name="startTime" id="startTime"
+                                   placeholder="Start Time">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endTime">End Time:</label>
+                            <input class="form-control" type="time" name="endTime" id="endTime" placeholder="End Time">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Registration Closing Date & time : </label>
+                            <input class="form-control" type="datetime-local" name="regClosingDate" id="regClosingDate"
+                                   placeholder="Enter Date">
+                        </div>
 
                         <div class="form-group">
 
-                            <textarea class="form-control" rows="10" id="description"
+                            <textarea class="form-control" rows="7" id="description"
                                       placeholder="description(optional)"></textarea>
                         </div>
                         <div class="form-group">
