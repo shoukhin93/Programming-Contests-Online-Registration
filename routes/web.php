@@ -30,6 +30,10 @@ Route::get('profile', function () {
     return view('profile.profile');
 });
 
+Route::get('notifications', function () {
+    return view('profile.notifications');
+});
+
 
 Route::get('arrange_contest', function () {
     return view('ManageContest.addContest');
