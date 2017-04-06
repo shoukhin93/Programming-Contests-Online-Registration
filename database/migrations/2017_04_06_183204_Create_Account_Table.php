@@ -15,7 +15,7 @@ class CreateAccountTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
 
-            $table->string('student_id',8)->primary();
+            $table->string('student_id',8)->nullable(false)->primary();
             $table->string('password',500)->nullable(false);
             $table->string('email',100)->nullable(false)->unique();
             $table->string('fname',10)->nullable(false);
@@ -24,7 +24,7 @@ class CreateAccountTable extends Migration
             $table->string('phon',11)->nullable(false);
             $table->string('gender',10)->nullable(false);
             $table->string('img',50)->nullable(false);
-            $table->boolean('status')->nullable(false);
+            $table->boolean('status')->nullable(false)->default(false);
 
             $table->timestamps();
         });
