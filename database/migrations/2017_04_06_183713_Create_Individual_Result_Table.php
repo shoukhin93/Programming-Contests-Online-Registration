@@ -13,10 +13,16 @@ class CreateIndividualResultTable extends Migration
      */
     public function up()
     {
-        // Schema::create('individual_results', function (Blueprint $table) {
-        //     $table->increments('id');
-        //     $table->timestamps();
-        // });
+        Schema::create('individual_results', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('student_id',8)->nullable(false);
+            $table->string('team_name',20)->nullable(false);
+            $table->integer('rank')->nullable(false);
+
+            $table->timestamps();
+
+            $table->foreign('student_id')->references('student_id')->on('accounts');
+        });
     }
 
     /**
