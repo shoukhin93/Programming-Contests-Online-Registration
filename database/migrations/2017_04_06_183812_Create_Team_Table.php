@@ -13,10 +13,10 @@ class CreateTeamTable extends Migration
      */
     public function up()
     {
-        Schema::create('teams', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        // Schema::create('teams', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->timestamps();
+        // });
     }
 
     /**

@@ -13,10 +13,10 @@ class CreateTeamResultTable extends Migration
      */
     public function up()
     {
-        Schema::create('team_results', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        // Schema::create('team_results', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->timestamps();
+        // });
     }
 
     /**

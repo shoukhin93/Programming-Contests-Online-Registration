@@ -13,10 +13,10 @@ class CreateIndividualResultTable extends Migration
      */
     public function up()
     {
-        Schema::create('individual_results', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        // Schema::create('individual_results', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->timestamps();
+        // });
     }
 
     /**

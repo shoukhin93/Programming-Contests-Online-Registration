@@ -13,10 +13,10 @@ class CreatePreviousContestTable extends Migration
      */
     public function up()
     {
-        Schema::create('previous_contests', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        // Schema::create('previous_contests', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->timestamps();
+        // });
     }
 
     /**

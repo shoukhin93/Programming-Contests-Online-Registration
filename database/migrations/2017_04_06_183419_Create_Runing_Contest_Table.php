@@ -13,10 +13,10 @@ class CreateRuningContestTable extends Migration
      */
     public function up()
     {
-        Schema::create('running_contests', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        // Schema::create('running_contests', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->timestamps();
+        // });
     }
 
     /**
