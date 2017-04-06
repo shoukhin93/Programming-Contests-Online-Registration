@@ -13,10 +13,19 @@ class CreateTeamTable extends Migration
      */
     public function up()
     {
-        // Schema::create('teams', function (Blueprint $table) {
-        //     $table->increments('id');
-        //     $table->timestamps();
-        // });
+        Schema::create('teams', function (Blueprint $table) {
+
+            $table->string('team_leader',8)->primary();
+            $table->string('team_name',20)->nullable(false);
+            $table->string('mem2',8)->nullable(false);
+            $table->string('mem3',8)->nullable(false);
+
+            $table->foreign('team_leader')->references('student_id')->on('accounts');
+            $table->foreign('mem2')->references('student_id')->on('accounts');
+            $table->foreign('mem3')->references('student_id')->on('accounts');
+
+            $table->timestamps();
+        });
     }
 
     /**
