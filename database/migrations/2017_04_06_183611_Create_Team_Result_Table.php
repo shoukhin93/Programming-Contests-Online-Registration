@@ -14,15 +14,15 @@ class CreateTeamResultTable extends Migration
     public function up()
     {
         Schema::create('team_results', function (Blueprint $table) {
-            $table->integer('contest_id')->primary();
-            $table->string('team_name',20)->nullable(false);
+            $table->unsignedInteger('contest_id')->nullable(false);
+            $table->string('team_name',20)->nullable(false)->unique();
             $table->string('mem1',8)->nullable(false);
             $table->string('mem2',8)->nullable(false);
             $table->string('mem3',8)->nullable(false);
             $table->integer('problem_solved')->nullable(false);
             $table->integer('time_penalty')->nullable(false);
             $table->integer('rank')->nullable(false);
-
+            $table->primary(['contest_id', 'team_name']);
             $table->timestamps();
 
             $table->foreign('contest_id')->references('contest_id')->on('previous_contests');
