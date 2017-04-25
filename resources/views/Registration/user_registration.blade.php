@@ -6,6 +6,8 @@
 
 @section('OuterInclude')
     <link href="{{ asset('css/user_registration.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/parsley.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/parsley.min.js') }}"></script>
 @endsection
 
 @section('ContentOfBody')
