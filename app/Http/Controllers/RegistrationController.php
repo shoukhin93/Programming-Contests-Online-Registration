@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use Validator;
 use App\account;
 use Illuminate\Http\Request;
 
@@ -14,23 +16,34 @@ class RegistrationController extends Controller
 
     public function register_user(Request $request)
     {
-        /* $this->validate($request, [
-             'CuttingWastage' => 'nullable|numeric',
-             'ExtraLoading' => 'nullable|numeric',
-             'RelaxingShrinkage' => 'nullable|numeric',
-             'WashingWastage' => 'nullable|numeric',
-         ]);*/
 
-        $student = account::where('student_id', '=', $request["userID"])->get();
+        //form validation rules
+        $rules = array(
+            'student_id' => 'required|unique:accounts|max:8|min:8',
+            'password1' => 'required|max:15|min:6',
+            'password2' => 'required|max:15|min:6|same:password1',
+            'userFirstName' => 'required|max:15',
+            'userLastName' => 'required|max:15',
+            'studentYear' => 'required',
+            'gender' => 'required',
+            'email' => 'required|unique:accounts',
+            'userContactNo' => 'required|numeric',
+        );
 
-        //echo $student;
+        //error messages
+        $messages = array('same' => 'The password must be matched');
 
+        //validating form
+        $validator = Validator::make($request->all(), $rules, $messages);
 
-        $account = null;
+        if ($validator->fails()) {
+            return redirect('user_registration')
+                ->withErrors($validator)
+                ->withInput($request->all());
 
-        if ($student != "") {
+        } else {
             $account = new account;
-            $account->student_id = $request["userID"];
+            $account->student_id = $request["student_id"];
             $account->password = $request["password1"];
             $account->email = $request["email"];
             $account->fname = $request["userFirstName"];
@@ -41,8 +54,6 @@ class RegistrationController extends Controller
             $account->save();
         }
 
-        echo $account;
-
-        //return redirect()->action('RegistrationController@user_registration');
+        return redirect('user_registration');
     }
 }
