@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\account;
 use Illuminate\Http\Request;
 
 class RegistrationController extends Controller
@@ -20,6 +21,28 @@ class RegistrationController extends Controller
              'WashingWastage' => 'nullable|numeric',
          ]);*/
 
-        return redirect()->action('RegistrationController@user_registration')->with('error', 'error');
+        $student = account::where('student_id', '=', $request["userID"])->get();
+
+        //echo $student;
+
+
+        $account = null;
+
+        if ($student != "") {
+            $account = new account;
+            $account->student_id = $request["userID"];
+            $account->password = $request["password1"];
+            $account->email = $request["email"];
+            $account->fname = $request["userFirstName"];
+            $account->lname = $request["userLastName"];
+            $account->year = $request["studentYear"];
+            $account->phone = $request["userContactNo"];
+            $account->gender = $request["gender"];
+            $account->save();
+        }
+
+        echo $account;
+
+        //return redirect()->action('RegistrationController@user_registration');
     }
 }

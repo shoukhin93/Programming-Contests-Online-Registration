@@ -42,17 +42,17 @@
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="userFirstName"
+                            <input type="text" class="form-control" id="userFirstName" name="userFirstName"
                                    placeholder="First Name" required="" data-parsley-trigger="change"
                                    data-parsley-maxlength="10">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="userLastName"
+                            <input type="text" class="form-control" id="userLastName" name="userLastName"
                                    placeholder="Last Name" required="" data-parsley-trigger="change"
                                    data-parsley-maxlength="10">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="userID"
+                            <input type="text" class="form-control" id="userID" name="userID"
                                    placeholder="Enter Student ID" data-parsley-trigger="change"
                                    data-parsley-type="digits"
                                    data-parsley-length="[8, 8]"
@@ -72,22 +72,23 @@
                         </div>
                         <div class="form-group">
                             <label class="radio-inline">
-                                <input type="radio" name="gender" data-parsley-trigger="change" required="">Male</label>
+                                <input type="radio" name="gender" data-parsley-trigger="change" value="male"
+                                       required="">Male</label>
                             <label class="radio-inline">
-                                <input type="radio" name="gender">Female</label>
+                                <input type="radio" name="gender" value="female">Female</label>
 
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Enter Email"
-                                   data-parsley-trigger="change" data-parsley-trigger="change" required="">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email"
+                                   data-parsley-trigger="change" required="">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="password1"
+                            <input type="password" class="form-control" id="password1" name="password1"
                                    data-parsley-trigger="change" placeholder="password" required="">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="password2"
+                            <input type="password" class="form-control" id="password2" name="password2"
                                    data-parsley-equalto="#password1"
                                    data-parsley-trigger="keyup"
                                    placeholder="Re-type password"
@@ -96,7 +97,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="userContactNo"
+                            <input type="text" class="form-control" id="userContactNo" name="userContactNo"
                                    placeholder="Contact No." data-parsley-trigger="change" data-parsley-type="number"
                                    required="">
                         </div>
@@ -117,14 +118,9 @@
     {{-- for validating form at user side--}}
     <script type="text/javascript">
         $(function () {
-            $('#demo-form').parsley().on('field:validated', function () {
-                var ok = $('.parsley-error').length === 0;
-                /*$('.bs-callout-info').toggleClass('hidden', !ok);
-                 $('.bs-callout-warning').toggleClass('hidden', ok);*/
-            })
-                .on('form:submit', function () {
-                    return false; // Don't submit form for this demo
-                });
+            $('#demo-form').parsley().on('form:submit', function () {
+                return false; // Don't submit form for this demo
+            });
         });
     </script>
 
