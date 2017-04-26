@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use Illuminate\Support\Facades\Hash;
 use Validator;
 use App\account;
 use Illuminate\Http\Request;
@@ -44,7 +45,7 @@ class RegistrationController extends Controller
         } else {
             $account = new account;
             $account->student_id = $request["student_id"];
-            $account->password = $request["password1"];
+            $account->password = Hash::make($request["password1"]);
             $account->email = $request["email"];
             $account->fname = $request["userFirstName"];
             $account->lname = $request["userLastName"];

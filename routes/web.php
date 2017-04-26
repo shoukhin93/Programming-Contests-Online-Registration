@@ -21,6 +21,8 @@ Route::get('main', function () {
 Route::get('user_registration', 'RegistrationController@user_registration');
 Route::post('/register_user', 'RegistrationController@register_user');
 
+Route::post('/login', 'LoginController@login');
+
 Route::get('/', function () {
     return view('Home.home');
 });
@@ -57,12 +59,12 @@ Route::get('member_request', function () {
     return view('Registration.member_request');
 });
 
-Route::get('registered_team',function(){
-	return view('Lists.registered_team');
+Route::get('registered_team', function () {
+    return view('Lists.registered_team');
 });
 
 Route::get('/contest_result', 'ListController@getResults');
 
-Route::get('contests',function(){
-	return view('Lists.contests');
+Route::get('contests', function () {
+    return view('Lists.contests');
 });
