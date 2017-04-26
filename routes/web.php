@@ -18,9 +18,8 @@ Route::get('main', function () {
     return view('main');
 });
 
-Route::get('user_registration', function () {
-    return view('Registration.user_registration');
-});
+Route::get('user_registration', 'RegistrationController@user_registration');
+Route::post('/register_user', 'RegistrationController@register_user');
 
 Route::get('/', function () {
     return view('Home.home');
