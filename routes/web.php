@@ -28,7 +28,7 @@ Route::get('/', function () {
 });
 
 // Profile Route Section...
-Route::get('profile/{id}','profile@ViewProfile')->where('id' , '[0-9]+');
+Route::get('/{id}','profile@ViewProfile')->where('id' , '[0-9]+');
 Route::get('edit_profile','profile@EditProfile');
 Route::post('StorePic','profile@StorePic');
 //End Pfrofile Route...

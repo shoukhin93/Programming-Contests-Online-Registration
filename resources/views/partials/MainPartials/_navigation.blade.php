@@ -43,7 +43,7 @@
             <!--Right navigation start -->
             <ul class="nav navbar-nav navbar-right my-menu">
                 <li><a href="notifications"><span class="glyphicon glyphicon-bell"></span></a></li>
-                <li><a href="profile">Profile</a></li>
+                <li><a href="/14025423">Profile</a></li>
                 <li><a href="#" data-toggle="modal"
                        data-target="#signinModal">Login</a></li>
                 <li><a href="user_registration">Register</a></li>
