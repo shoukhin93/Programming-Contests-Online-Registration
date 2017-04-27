@@ -23,92 +23,32 @@
                     <div class="table-responsive">
                         <table class="table table-bordered table-condensed">
                             <thead>
-                            <tr>
-                                <th>Team Name</th>
-                                <th>Team Members</th>
-                                <th>Problems Solved</th>
-                                <th>Time Penalty</th>
-                                <th>Rank</th>
-                            </tr>
+                                <tr>
+                                    <th>Team Name</th>
+                                    <th>Team Members</th>
+                                    <th>Problems Solved</th>
+                                    <th>Time Penalty</th>
+                                    <th>Rank</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="team_name">7</td>
-                                <td class="team_name">670</td>
-                                <td class="team_name">1</td>
-                            </tr>
+                                @if($results)
+                                    @foreach($results as $result)
+                                        <tr>
+                                            <td class="team_name">{{$result->team_name}}</td>
+                                            <td>
+                                                <p>{{$result->mem1}}</p>
+                                                <p>{{$result->mem2}}</p>
+                                                <p>{{$result->mem3}}</p>
+                                            </td>
+                                            <td class="team_name">{{$result->problem_solved}}</td>
+                                            <td class="team_name">{{$result->time_penalty}}</td>
+                                            <td class="team_name">{{$result->rank}}</td>
+                                        </tr>
+                                    @endforeach
+                                  @else
+                                    <h1>There are no current resuts show</h1>
+                                @endif
                         </tbody>
                     </table>
                 </div> <!--End Of table-responsive-->
