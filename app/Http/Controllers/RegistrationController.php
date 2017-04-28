@@ -53,6 +53,7 @@ class RegistrationController extends Controller
             $account->phone = $request["userContactNo"];
             $account->gender = $request["gender"];
             $account->save();
+            
         }
 
         return redirect('user_registration');
