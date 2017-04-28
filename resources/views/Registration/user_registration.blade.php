@@ -79,18 +79,18 @@
                                     required="">
                                 <option style="color: black" value="" disabled selected hidden>Select Year
                                 </option>
-                                <option style="color: black" value="1">1st Year</option>
-                                <option style="color: black" value="2">2nd Year</option>
-                                <option style="color: black" value="3">3rd Year</option>
-                                <option style="color: black" value="4">4th Year</option>
+                                <option style="color: black" value="1'st">1st Year</option>
+                                <option style="color: black" value="2'nd">2nd Year</option>
+                                <option style="color: black" value="3'rd">3rd Year</option>
+                                <option style="color: black" value="4'th">4th Year</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="radio-inline">
-                                <input type="radio" name="gender" data-parsley-trigger="change" value="male"
+                                <input type="radio" name="gender" data-parsley-trigger="change" value="Male"
                                        required="">Male</label>
                             <label class="radio-inline">
-                                <input type="radio" name="gender" value="female">Female</label>
+                                <input type="radio" name="gender" value="Female">Female</label>
 
                         </div>
 

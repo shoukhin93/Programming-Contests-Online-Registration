@@ -52,6 +52,7 @@ class RegistrationController extends Controller
             $account->year = $request["studentYear"];
             $account->phone = $request["userContactNo"];
             $account->gender = $request["gender"];
+            $account->img = 'image/default.jpg';
             $account->save();
             
         }

@@ -17,42 +17,42 @@
 {{-- Main Profile View --}}
 <div class="container">
 	<div class=" col-sm-12 pro_head clearfix">
-	<h2 class="pull-left"> <strong>Rakul's</strong> Profile</h2>
+	<h2 class="pull-left"> <strong>{{$Personal->fname}}'s</strong> Profile</h2>
   <h2 class="pull-right">
     <a href="edit_profile" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
   </h2>	
 	</div>
 	<div class="col-sm-2"></div>
 	<div class="col-sm-3" align="center"> 
-		<img src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail" alt="Profile Pic" width="200" height="200">
-		<p class="cls_phn_num"> <span class="glyphicon glyphicon-phone-alt" style="color: #357ed3;"></span> 01915770274</p>
+		<img src="{{ asset($Personal->img) }}" class="img-thumbnail" alt="Profile Pic" width="200" height="200">
+		<p class="cls_phn_num"> <span class="glyphicon glyphicon-phone-alt" style="color: #357ed3;"></span> {{$Personal->phone}}</p>
 	</div>
 	<div class="col-sm-6 pro-info">
 	<table class="table info_table">
           <tbody>
             <tr>
               <td><strong>ID:</strong></td>
-              <td> <strong>14025423</strong></td>
+              <td> <strong>{{$Personal->student_id}}</strong></td>
             </tr>
             <tr>
               <td>Name:</td>
-              <td>Rakul Preet Sing</td>
+              <td>{{$Personal->fname.' '.$Personal->lname}}</td>
             </tr>
             <tr>
               <td>Gender:</td>
-              <td>Female</td>
+              <td>{{$Personal->gender}}</td>
             </tr>
             <tr>
               <td>Email:</td>
-              <td>info@something.com</td>
+              <td>{{$Personal->email}}</td>
             </tr>
             <tr>
               <td>Year:</td>
-              <td>3'rd</td>
+              <td>{{$Personal->year}}</td>
             </tr>
             <tr>
               <td>Phone:</td>
-              <td>01915770274</td>
+              <td>{{$Personal->phone}}</td>
             </tr>
           </tbody>
         </table>

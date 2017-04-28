@@ -27,9 +27,12 @@ Route::get('/', function () {
     return view('Home.home');
 });
 
-Route::get('profile', function () {
-    return view('profile.profile');
-});
+// Profile Route Section...
+Route::get('/{id}','profile@ViewProfile')->where('id' , '[0-9]+');
+Route::get('edit_profile','profile@EditProfile');
+Route::post('StorePic','profile@StorePic');
+//End Pfrofile Route...
+
 
 Route::get('notifications', function () {
     return view('profile.notifications');
@@ -38,11 +41,6 @@ Route::get('notifications', function () {
 
 Route::get('arrange_contest', function () {
     return view('ManageContest.addContest');
-});
-
-Route::get('edit_profile', function () {
-    return view('profile.profileUpdate');
-
 });
 
 Route::get('edit_contest', function () {
