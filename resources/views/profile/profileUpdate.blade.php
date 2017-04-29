@@ -23,9 +23,10 @@
     <div class="col-sm-4 pro_image" align="center">
         <h4>Current Profile Picture.</h4>
         <img  id="ProPicUp" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="StorePic" method="post" enctype="multipart/form-data">
+             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group">
-                <input type="file" name="fileToUpload" id="fileToUpload" class="file" accept="image/jpg, image/jpeg, image/png">
+                <input type="file" name="fileToUpload" id="fileToUpload" class="file" accept="image/jpg, image/jpeg, image/png" required>
             </div>
 
             <div class="input-group" style="width:220px;">

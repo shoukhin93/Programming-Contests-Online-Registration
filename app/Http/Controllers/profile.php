@@ -26,7 +26,7 @@ class profile extends Controller
 
     //storing Profile Picture
     public function StorePic(Request $request){
-
+        return $request;
     }
     
 }
