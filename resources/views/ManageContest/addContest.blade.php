@@ -39,14 +39,18 @@
 
                 <div class="col-sm-4">
 
-                    <form>
+                    <form class="form-horizontal" action='/arrange_contest' method="post">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+
+                        <label id = "error" name="error">{{$error}}</label>
+
                         <div class="form-group">
                             <input class="form-control" type="text" name="contestName" id="contestName"
                                    placeholder="Contest Name">
                         </div>
                         <div class="form-group">
-                            <label for="date">Contest's Date</label>
-                            <input class="form-control" type="date" name="date" id="date" placeholder="Enter Date">
+                            <label for="startDate">Contest's Date</label>
+                            <input class="form-control" type="date" name="startDate" id="startDate" placeholder="Enter Date">
                         </div>
 
                         <div class="form-group">
@@ -61,14 +65,20 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="date">Registration Closing Date & time: </label>
-                            <input class="form-control" type="datetime-local" name="regClosingDate" id="regClosingDate"
+                            <label for="closeDate">Registration Closing Date: </label>
+                            <input class="form-control" type="date" name="closeDate" id="closeDate"
+                                   placeholder="Enter Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="closeTime">Registration Closing Time: </label>
+                            <input class="form-control" type="time" name="closeTime" id="closeTime"
                                    placeholder="Enter Date">
                         </div>
 
                         <div class="form-group">
 
-                            <textarea class="form-control" rows="8" id="description"
+                            <textarea class="form-control" rows="8" id="description" name = "description"
                                       placeholder="description(optional)"></textarea>
                         </div>
                         <div class="form-group">

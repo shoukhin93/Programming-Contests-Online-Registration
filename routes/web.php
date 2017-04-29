@@ -34,14 +34,16 @@ Route::post('StorePic','profile@StorePic');
 //End Pfrofile Route...
 
 
+
 Route::get('notifications', function () {
     return view('profile.notifications');
 });
 
 
-Route::get('arrange_contest', function () {
-    return view('ManageContest.addContest');
-});
+Route::get('arrange_contest','AdminController@getContestRegistration');
+Route::post('arrange_contest','AdminController@postContestRegistration');
+
+
 
 Route::get('edit_contest', function () {
     return view('ManageContest.edit_contest');
