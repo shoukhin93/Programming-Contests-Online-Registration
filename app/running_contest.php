@@ -12,5 +12,4 @@ class running_contest extends Model
      *
      * @var bool
      */
-    public $incrementing = false;
 }

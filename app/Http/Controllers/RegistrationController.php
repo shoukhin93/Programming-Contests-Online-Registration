@@ -54,6 +54,7 @@ class RegistrationController extends Controller
             $account->gender = $request["gender"];
             $account->img = 'image/default.jpg';
             $account->save();
+            
         }
 
         return redirect('user_registration');
