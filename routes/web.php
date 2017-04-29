@@ -42,13 +42,8 @@ Route::get('notifications', function () {
 
 Route::get('arrange_contest','AdminController@getContestRegistration');
 Route::post('arrange_contest','AdminController@postContestRegistration');
-
-
-
-Route::get('edit_contest', function () {
-    return view('ManageContest.edit_contest');
-
-});
+Route::get('edit_contest','AdminController@getEditContest');
+Route::post('edit_contest','AdminController@postEditContest');
 
 Route::get('contest_registration', function () {
     return view('ManageContest.contest_registration');
