@@ -10,7 +10,7 @@ class profile extends Controller
 
 	//profile view
 	public function ViewProfile($id){
-        $dbVar=account::where('student_id','=',$id)->first();
+        $dbVar=account::find($id);
 
         if($dbVar){
             return view('profile.profile')->with('Personal',$dbVar);

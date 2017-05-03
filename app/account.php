@@ -12,4 +12,6 @@ class account extends Model
      * @var bool
      */
     public $incrementing = false;
+    
+    protected $primaryKey='student_id';
 }
