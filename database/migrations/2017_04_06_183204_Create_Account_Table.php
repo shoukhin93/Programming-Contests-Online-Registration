@@ -23,8 +23,9 @@ class CreateAccountTable extends Migration
             $table->string('year', 20)->nullable(false);
             $table->string('phone', 11)->nullable(false);
             $table->string('gender', 10)->nullable(false);
-            $table->string('img', 50)->nullable(false)->default("");
+            $table->string('img', 50)->nullable(false)->default("image/default.jpg");
             $table->boolean('status')->nullable(false)->default(false);
+            $table->rememberToken();
 
             $table->timestamps();
         });
