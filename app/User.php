@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'student_id','password','email','fname','lname','year','phone','gender',
     ];
 
     /**
@@ -26,4 +26,17 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+    * The table associated with the model.
+    *
+    * @var string
+    */
+    protected $table = 'accounts';
+
+    protected $primaryKey='student_id';
+
+    public $incrementing = false;
+
+    
 }
