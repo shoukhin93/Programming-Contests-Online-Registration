@@ -61,3 +61,7 @@ Route::get('/contest_result', 'ListController@getResults');
 Route::get('contests', function () {
     return view('Lists.contests');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
