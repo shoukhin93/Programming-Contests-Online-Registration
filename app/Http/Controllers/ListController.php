@@ -10,6 +10,6 @@ class ListController extends Controller
     public function getResults()
     {
         $results = team_result::all();
-        return view('Lists.contest_result')->with('results', $results);;
+        return view('Lists.contest_result')->with('results', $results);
     }
 }

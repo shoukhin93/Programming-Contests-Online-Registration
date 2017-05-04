@@ -12,5 +12,62 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        DB::table('accounts')->insert([
+            'student_id' => '1',
+            'password' => 'x',
+            'email' => 'a',
+            'fname' => 'c',
+            'lname' => 'c',
+            'year' => 'c',
+            'phone' => 'c',
+            'gender' => 'c',
+
+        ]);
+     
+        DB::table('accounts')->insert([
+            'student_id' => '2',
+            'password' => 'x',
+            'email' => 'b',
+            'fname' => 'c',
+            'lname' => 'c',
+            'year' => 'c',
+            'phone' => 'c',
+            'gender' => 'c',
+
+        ]);
+        DB::table('accounts')->insert([
+            'student_id' => '3',
+            'password' => 'x',
+            'email' => 'c',
+            'fname' => 'c',
+            'lname' => 'c',
+            'year' => 'c',
+            'phone' => 'c',
+            'gender' => 'c',
+
+        ]);
+        DB::table('accounts')->insert([
+            'student_id' => '4',
+            'password' => 'x',
+            'email' => 'd',
+            'fname' => 'c',
+            'lname' => 'c',
+            'year' => 'c',
+            'phone' => 'c',
+            'gender' => 'c',
+
+        ]);
+        DB::table('accounts')->insert([
+            'student_id' => '5',
+            'password' => 'x',
+            'email' => 'e',
+            'fname' => 'c',
+            'lname' => 'c',
+            'year' => 'c',
+            'phone' => 'c',
+            'gender' => 'c'
+
+        ]);
+      
     }
 }

@@ -45,10 +45,8 @@ Route::post('arrange_contest','AdminController@postContestRegistration');
 Route::get('edit_contest','AdminController@getEditContest');
 Route::post('edit_contest','AdminController@postEditContest');
 
-Route::get('contest_registration', function () {
-    return view('ManageContest.contest_registration');
-
-});
+Route::get('contest_registration','TeamRegistrationController@getUserRegistration');
+Route::post('contest_registration','TeamRegistrationController@postUserRegistration');
 
 Route::get('member_request', function () {
     return view('Registration.member_request');

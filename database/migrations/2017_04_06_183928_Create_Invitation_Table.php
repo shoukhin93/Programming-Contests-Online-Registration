@@ -15,12 +15,10 @@ class CreateInvitationTable extends Migration
     {
         Schema::create('invitations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('team_name',20)->nullable(false)->unique();
+            $table->string('team_name',20)->nullable(false);
             $table->string('member_id',8)->nullable(false);
-            $table->boolean('status')->nullable(false)->default(false);
-
+            $table->string('status',20)->nullable(false);
             $table->timestamps();
-            
             $table->foreign('member_id')->references('student_id')->on('accounts');
         });
     }

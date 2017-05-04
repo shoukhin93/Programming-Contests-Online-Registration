@@ -14,7 +14,8 @@ class CreateRuningContestTable extends Migration
     public function up()
     {
         Schema::create('running_contests', function (Blueprint $table) {
-            $table->string('contest_name',100)->nullable(false)->primary();
+            $table->increments('contest_id');
+            $table->string('contest_name',100)->nullable(false);
             $table->date('contest_date')->nullable(false);
             $table->time('contest_start')->nullable(false);
             $table->time('contest_end')->nullable(false);

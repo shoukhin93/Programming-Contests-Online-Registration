@@ -41,18 +41,20 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-4">
 
-                    <form>
+                    <form action='/contest_registration' method="post">
+                         <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <label id = "error" name="error">{{$error}}</label>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="teamName" placeholder="Team Name">
+                            <input type="text" class="form-control" id="teamName" placeholder="Team Name" name = "team_name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="mem1Id" placeholder="Member 1 Student ID">
+                            <input type="text" class="form-control" id="mem1Id" placeholder="Your Student ID" name = "mem1">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="mem2ID" placeholder="Member 2 Student ID">
+                            <input type="text" class="form-control" id="mem2ID" placeholder="Member 2 Student ID"  name = "mem2">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="mem3ID" placeholder="Member 3 Student ID">
+                            <input type="text" class="form-control" id="mem3ID" placeholder="Member 3 Student ID"  name = "mem3">
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
