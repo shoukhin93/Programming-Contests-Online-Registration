@@ -28,9 +28,9 @@ Route::get('/', function () {
 });
 
 // Profile Route Section...
-Route::get('/{id}','profile@ViewProfile')->where('id' , '[0-9]+');
-Route::get('edit_profile','profile@EditProfile');
-Route::post('StorePic','profile@StorePic');
+Route::get('/{id}','ProfileController@ViewProfile')->where('id' , '[0-9]+');
+Route::get('edit_profile','ProfileController@EditProfile');
+Route::post('StorePic','ProfileController@StorePic');
 //End Pfrofile Route...
 
 
@@ -60,7 +60,7 @@ Route::post('contest_registration','TeamRegistrationController@postUserRegistrat
 
 Route::get('registered_team', function () {
     return view('Lists.registered_team');
-});
+})->name('registered_team');
 
 Route::get('/contest_result', 'ListController@getResults');
 

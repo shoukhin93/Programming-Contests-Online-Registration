@@ -5,8 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\account;
 
-class profile extends Controller
+class ProfileController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
 	//profile view
 	public function ViewProfile($id){

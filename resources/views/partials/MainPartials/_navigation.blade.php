@@ -29,7 +29,7 @@
                         <li><a href="{{route('admin.member_request')}}">Accept Request</a></li>
                     </ul>
                 </li> <!--Admin dropdown ends -->
-                <li class="accept_team"><a href="registered_team">Accepted Team</a></li>
+                <li class="accept_team"><a href="{{route('registered_team')}}">Accepted Team</a></li>
                 <li class="Search">
                     <form class="navbar-form">
                         <div class="form-group">
