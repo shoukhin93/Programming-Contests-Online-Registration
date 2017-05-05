@@ -18,10 +18,10 @@ Route::get('main', function () {
     return view('main');
 });
 
-Route::get('user_registration', 'RegistrationController@user_registration');
-Route::post('/register_user', 'RegistrationController@register_user');
+// Route::get('user_registration', 'RegistrationController@user_registration');
+// Route::post('/register_user', 'RegistrationController@register_user');
 
-Route::post('/login', 'LoginController@login');
+// Route::post('/login', 'LoginController@login');
 
 Route::get('/', function () {
     return view('Home.home');
@@ -39,11 +39,15 @@ Route::get('notifications', function () {
     return view('profile.notifications');
 });
 
-
+//Admin Route Section
+Route::get('admin/login','Auth\AdminLoginController@SowLogInForm')->name('admin.login');
+Route::post('admin/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
 Route::get('arrange_contest','AdminController@getContestRegistration');
 Route::post('arrange_contest','AdminController@postContestRegistration');
 Route::get('edit_contest','AdminController@getEditContest');
 Route::post('edit_contest','AdminController@postEditContest');
+Route::get('/admin','AdminController@index')->name('admin');
+//End Admin Route Section
 
 Route::get('contest_registration','TeamRegistrationController@getUserRegistration');
 Route::post('contest_registration','TeamRegistrationController@postUserRegistration');

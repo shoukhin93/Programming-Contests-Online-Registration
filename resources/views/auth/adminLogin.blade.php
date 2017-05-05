@@ -21,18 +21,18 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Admin Login</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('admin.login.submit') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('student_id') ? ' has-error' : '' }}">
-                            <label for="student_id" class="col-md-4 control-label">User ID</label>
+                        <div class="form-group{{ $errors->has('admin_id') ? ' has-error' : '' }}">
+                            <label for="admin_id" class="col-md-4 control-label">Admin ID</label>
 
                             <div class="col-md-6">
-                                <input id="student_id" type="text" class="form-control" name="student_id" value="{{ old('student_id') }}" max="8" required autofocus>
+                                <input id="admin_id" type="text" class="form-control" name="admin_id" value="{{ old('admin_id') }}" max="15" required autofocus>
 
-                                @if ($errors->has('student_id'))
+                                @if ($errors->has('admin_id'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('student_id') }}</strong>
+                                        <strong>{{ $errors->first('admin_id') }}</strong>
                                     </span>
                                 @endif
                             </div>

@@ -9,6 +9,21 @@ use App\running_contest;
 
 class AdminController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
+    public function index(){
+        return "<h1>Yo Bro Admin You are Just Logged In.</h1>";
+    }
+
     public function getContestRegistration()
     {
          return view('ManageContest.addContest')->with("error","");
