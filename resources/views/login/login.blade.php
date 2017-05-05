@@ -9,12 +9,12 @@
                 </h4>
             </div>
             <div class="modal-body">
-                <form action="/login" method="post">
+                <form action="/login" method="post" action="#">
 
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="userID" name="userLoginID" maxlength="10"
+                        <input type="text" class="form-control" id="userID" name="student_id" maxlength="8"
                                placeholder="User ID">
                     </div>
                     <div class="form-group">
