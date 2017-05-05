@@ -24,8 +24,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button"
                        aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="arrange_contest">Add Contest</a></li>
-                        <li><a href="edit_contest">Modify Contest</a></li>
+                        <li><a href="{{route('admin.arrange_contest')}}">Add Contest</a></li>
+                        <li><a href="{{route('admin.edit_contest')}}">Modify Contest</a></li>
                         <li><a href="member_request">Accept Request</a></li>
                     </ul>
                 </li> <!--Admin dropdown ends -->

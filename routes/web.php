@@ -40,13 +40,23 @@ Route::get('notifications', function () {
 });
 
 //Admin Route Section
-Route::get('admin/login','Auth\AdminLoginController@SowLogInForm')->name('admin.login');
-Route::post('admin/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
-Route::get('arrange_contest','AdminController@getContestRegistration');
-Route::post('arrange_contest','AdminController@postContestRegistration');
-Route::get('edit_contest','AdminController@getEditContest');
-Route::post('edit_contest','AdminController@postEditContest');
-Route::get('/admin','AdminController@index')->name('admin');
+Route::prefix('admin')->group(function(){
+	Route::get('/login','Auth\AdminLoginController@SowLogInForm')->name('admin.login');
+	Route::post('/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
+	Route::get('/arrange_contest','AdminController@getContestRegistration')->name('admin.arrange_contest');
+	Route::post('/arrange_contest','AdminController@postContestRegistration')->name('admin.arrange_contest.submit');
+	Route::get('/edit_contest','AdminController@getEditContest')->name('admin.edit_contest');
+	Route::post('/edit_contest','AdminController@postEditContest')->name('admin.edit_contest.submit');
+	Route::get('/','AdminController@index')->name('admin');
+});
+
+// Route::get('admin/login','Auth\AdminLoginController@SowLogInForm')->name('admin.login');
+// Route::post('admin/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
+// Route::get('arrange_contest','AdminController@getContestRegistration')->name('admin.arrange_contest');
+// Route::post('arrange_contest','AdminController@postContestRegistration')->name('admin.arrange_contest.submit');
+// Route::get('edit_contest','AdminController@getEditContest')->name('admin.edit_contest');
+// Route::post('edit_contest','AdminController@postEditContest')->name('admin.edit_contest.submit');
+// Route::get('/admin','AdminController@index')->name('admin');
 //End Admin Route Section
 
 Route::get('contest_registration','TeamRegistrationController@getUserRegistration');

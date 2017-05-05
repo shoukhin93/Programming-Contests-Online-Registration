@@ -39,7 +39,7 @@
 
                 <div class="col-sm-4">
 
-                    <form class="form-horizontal" action='/arrange_contest' method="post">
+                    <form class="form-horizontal" action='{{route('admin.arrange_contest.submit')}}' method="post">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
                         <label id = "error" name="error">{{$error}}</label>
