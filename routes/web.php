@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('home', function () {
+Route::get('/', function () {
     return view('Home.home');
 });
 
@@ -23,25 +23,35 @@ Route::get('main', function () {
 
 // Route::post('/login', 'LoginController@login');
 
+//Route::get('/', 'HomeController@showHome');
 // Profile Route Section...
-Route::get('/{id}','ProfileController@ViewProfile')->where('id' , '[0-9]+')->name('viewProfile');
-Route::get('edit_profile','ProfileController@EditProfile')->name('editProfile');
-Route::post('StorePic','ProfileController@StorePic')->name('savePicture');
-Route::get('notifications','ProfileController@getNotification')->name('getNotification');
+Route::get('/{id}','ProfileController@ViewProfile')->where('id' , '[0-9]+');
+Route::get('edit_profile','ProfileController@EditProfile');
+Route::post('StorePic','ProfileController@StorePic');
 //End Pfrofile Route...
+
+
+
+Route::get('notifications', function () {
+    return view('profile.notifications');
+});
 
 //Admin Route Section
 Route::prefix('admin')->group(function(){
-	Route::get('/login','Auth\AdminLoginController@SowLogInForm')->name('admin.login');
+	Route::get('/login','Auth\AdminLoginController@ShowLogInForm');
 	Route::post('/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
-	Route::get('/arrange_contest','AdminController@getContestRegistration')->name('admin.arrange_contest');
-	Route::post('/arrange_contest','AdminController@postContestRegistration')->name('admin.arrange_contest.submit');
-	Route::get('/edit_contest','AdminController@getEditContest')->name('admin.edit_contest');
-	Route::post('/edit_contest','AdminController@postEditContest')->name('admin.edit_contest.submit');
-	Route::get('/member_request','AdminController@getMemberRequest')->name('admin.member_request');
-	Route::post('/member_request','AdminController@updateMemberRequest')->name('admin.member_request.submit');
-	Route::get('/','AdminController@index')->name('admin');
+	Route::get('/arrange_contest','AdminController@getContestRegistration');
+	Route::post('/arrange_contest','AdminController@postContestRegistration');
+	Route::get('/edit_contest','AdminController@getEditContest');
+	Route::post('/edit_contest','AdminController@postEditContest');
+	Route::get('/member_request','AdminController@getMemberRequest');
+	Route::post('/member_request','AdminController@updateMemberRequest');
+	Route::post('/logout','Auth\AdminLoginController@logout');
+
 });
+
+
+
 //End Admin Route Section
 
 Route::get('contest_registration','TeamRegistrationController@getUserRegistration');
@@ -60,9 +70,5 @@ Route::get('contests', function () {
 });
 
 Auth::routes();
-
-Route::get('/', function () {
-    return view('Home.home');
-});
 
 Route::get('/home', 'HomeController@index');

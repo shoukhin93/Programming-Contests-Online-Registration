@@ -20,10 +20,6 @@ class AdminController extends Controller
         $this->middleware('auth:admin');
     }
 
-    public function index(){
-        return "<h1>Yo Bro Admin You are Just Logged In.</h1>";
-    }
-
     public function getContestRegistration()
     {
          return view('ManageContest.addContest')->with("error","");
