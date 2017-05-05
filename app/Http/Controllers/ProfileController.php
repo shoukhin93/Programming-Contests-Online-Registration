@@ -10,7 +10,7 @@ class ProfileController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except' => 'ViewProfile']);
     }
 
 	//profile view
@@ -32,6 +32,10 @@ class ProfileController extends Controller
     //storing Profile Picture
     public function StorePic(Request $request){
         return $request;
+    }
+
+    public function getNotification(){
+        return view('profile.notifications');
     }
     
 }
