@@ -47,24 +47,16 @@ Route::prefix('admin')->group(function(){
 	Route::post('/arrange_contest','AdminController@postContestRegistration')->name('admin.arrange_contest.submit');
 	Route::get('/edit_contest','AdminController@getEditContest')->name('admin.edit_contest');
 	Route::post('/edit_contest','AdminController@postEditContest')->name('admin.edit_contest.submit');
+	Route::get('/member_request','AdminController@getMemberRequest')->name('admin.member_request');
+	Route::post('/member_request','AdminController@updateMemberRequest')->name('admin.member_request.submit');
 	Route::get('/','AdminController@index')->name('admin');
 });
-
-// Route::get('admin/login','Auth\AdminLoginController@SowLogInForm')->name('admin.login');
-// Route::post('admin/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
-// Route::get('arrange_contest','AdminController@getContestRegistration')->name('admin.arrange_contest');
-// Route::post('arrange_contest','AdminController@postContestRegistration')->name('admin.arrange_contest.submit');
-// Route::get('edit_contest','AdminController@getEditContest')->name('admin.edit_contest');
-// Route::post('edit_contest','AdminController@postEditContest')->name('admin.edit_contest.submit');
-// Route::get('/admin','AdminController@index')->name('admin');
 //End Admin Route Section
 
 Route::get('contest_registration','TeamRegistrationController@getUserRegistration');
 Route::post('contest_registration','TeamRegistrationController@postUserRegistration');
 
-Route::get('member_request', function () {
-    return view('Registration.member_request');
-});
+
 
 Route::get('registered_team', function () {
     return view('Lists.registered_team');

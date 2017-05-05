@@ -26,7 +26,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{route('admin.arrange_contest')}}">Add Contest</a></li>
                         <li><a href="{{route('admin.edit_contest')}}">Modify Contest</a></li>
-                        <li><a href="member_request">Accept Request</a></li>
+                        <li><a href="{{route('admin.member_request')}}">Accept Request</a></li>
                     </ul>
                 </li> <!--Admin dropdown ends -->
                 <li class="accept_team"><a href="registered_team">Accepted Team</a></li>

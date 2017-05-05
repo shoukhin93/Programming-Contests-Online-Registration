@@ -87,5 +87,12 @@ class AdminController extends Controller
          return redirect()->action('AdminController@getEditContest');
     }
 
-    
+    // This Function Return all Member request view
+    public function getMemberRequest(){
+        return view('Registration.member_request');
+    }
+    //This Function accept or delete a member
+    public function updateMemberRequest(Request $request){
+
+    }
 }
