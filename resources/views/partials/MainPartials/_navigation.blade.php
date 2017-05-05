@@ -16,11 +16,14 @@
         <div class="collapse navbar-collapse" id="fullNavbar">
             <!--Left navigation start -->
             <ul class="nav navbar-nav my-menu">
-                <li class="Home"><a href="home">Home</a></li>
+                <li class="Home"><a href="/">Home</a></li>
                 <li class="Contests"><a href="contests">Contests</a></li>
                 <li class="Results"><a href="contest_result">Results</a></li>
-                <!--Admin dropdown starts -->
-                <li class="dropdown">
+                
+                @if(Auth::guard('admin')->check())
+                {
+                    <!--Admin dropdown starts -->
+                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button"
                        aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -28,26 +31,58 @@
                         <li><a href="{{route('admin.edit_contest')}}">Modify Contest</a></li>
                         <li><a href="{{route('admin.member_request')}}">Accept Request</a></li>
                     </ul>
-                </li> <!--Admin dropdown ends -->
+                    </li> <!--Admin dropdown ends -->
+                }
+               @endif
+
                 <li class="accept_team"><a href="{{route('registered_team')}}">Accepted Team</a></li>
-                <li class="Search">
-                    <form class="navbar-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                    </form>
-                </li>
+                  
+                  @if(Auth::guard('admin')->check() || Auth::check())
+                    <li class="Search">
+                        <form class="navbar-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>
+                @endif
+                
             </ul> <!--Left navigation ends -->
 
 
             <!--Right navigation start -->
             <ul class="nav navbar-nav navbar-right my-menu">
-                <li><a href="notifications"><span class="glyphicon glyphicon-bell"></span></a></li>
-                <li><a href="/14025423">Profile</a></li>
+                @if(Auth::check())
+                    <li><a href="notifications"><span class="glyphicon glyphicon-bell"></span></a></li>
+                    <li><a href="/14025423">Profile</a></li>
+                @endif
                 {{-- <li><a href="#" data-toggle="modal"
                        data-target="#signinModal">Login</a></li> --}}
-                <li><a href="{{route('login')}}">Login</a></li>
-                <li><a href="{{route('register')}}">Register</a></li>
+                 @if (Auth::guest())
+                    <li><a href="{{route('login')}}">Login</a></li>
+                    <li><a href="{{route('register')}}">Register</a></li>
+                  @else
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            {{ Auth::user()->fname }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @endif
+                
             </ul> <!--Right navigation ends -->
 
         </div><!-- /.navbar-collapse -->

@@ -32,8 +32,12 @@
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.</p>
-
-            <a href="contest_registration" class="btn btn-success" role="button">Click For Registration</a>
+            @if(Auth::check())
+                <a href="contest_registration" class="btn btn-success" role="button">Click For Registration</a>
+            @else
+                <h2> Please Log In To Register </h2>
+            @endif
+            
             <div class="add"></div>
         </div>
     </div>

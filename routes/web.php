@@ -23,10 +23,6 @@ Route::get('main', function () {
 
 // Route::post('/login', 'LoginController@login');
 
-Route::get('/', function () {
-    return view('Home.home');
-});
-
 // Profile Route Section...
 Route::get('/{id}','ProfileController@ViewProfile')->where('id' , '[0-9]+');
 Route::get('edit_profile','ProfileController@EditProfile');
@@ -69,5 +65,9 @@ Route::get('contests', function () {
 });
 
 Auth::routes();
+
+Route::get('/', function () {
+    return view('Home.home');
+});
 
 Route::get('/home', 'HomeController@index');
