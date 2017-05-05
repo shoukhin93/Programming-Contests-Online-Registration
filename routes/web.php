@@ -28,16 +28,11 @@ Route::get('/', function () {
 });
 
 // Profile Route Section...
-Route::get('/{id}','ProfileController@ViewProfile')->where('id' , '[0-9]+');
-Route::get('edit_profile','ProfileController@EditProfile');
-Route::post('StorePic','ProfileController@StorePic');
+Route::get('/{id}','ProfileController@ViewProfile')->where('id' , '[0-9]+')->name('viewProfile');
+Route::get('edit_profile','ProfileController@EditProfile')->name('editProfile');
+Route::post('StorePic','ProfileController@StorePic')->name('savePicture');
+Route::get('notifications','ProfileController@getNotification')->name('getNotification');
 //End Pfrofile Route...
-
-
-
-Route::get('notifications', function () {
-    return view('profile.notifications');
-});
 
 //Admin Route Section
 Route::prefix('admin')->group(function(){
