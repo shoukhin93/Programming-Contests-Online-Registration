@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('accounts')->insert([
             'student_id' => '1',
-            'password' => 'x',
+            'password' => Hash::make('x'),
             'email' => 'a',
             'fname' => 'c',
             'lname' => 'c',
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
      
         DB::table('accounts')->insert([
             'student_id' => '2',
-            'password' => 'x',
+            'password' => Hash::make('x'),
             'email' => 'b',
             'fname' => 'c',
             'lname' => 'c',
@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('accounts')->insert([
             'student_id' => '3',
-            'password' => 'x',
+            'password' => Hash::make('x'),
             'email' => 'c',
             'fname' => 'c',
             'lname' => 'c',
@@ -54,7 +54,7 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('accounts')->insert([
             'student_id' => '4',
-            'password' => 'x',
+            'password' => Hash::make('x'),
             'email' => 'd',
             'fname' => 'c',
             'lname' => 'c',
@@ -65,7 +65,7 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('accounts')->insert([
             'student_id' => '5',
-            'password' => 'x',
+            'password' => Hash::make('x'),
             'email' => 'e',
             'fname' => 'c',
             'lname' => 'c',
