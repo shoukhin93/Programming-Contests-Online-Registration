@@ -19,7 +19,9 @@
 	<div class=" col-sm-12 pro_head clearfix">
 	<h2 class="pull-left"> <strong>{{$Personal->fname}}'s</strong> Profile</h2>
   <h2 class="pull-right">
-    <a href="edit_profile" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
+    @if(Auth::guard('web')->check() && Auth::guard('web')->user()->student_id == $Personal->student_id)
+    <a href="{{route('editProfile')}}" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit"></span></a>
+    @endif
   </h2>	
 	</div>
 	<div class="col-sm-2"></div>
