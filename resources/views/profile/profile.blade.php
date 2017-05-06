@@ -28,6 +28,9 @@
 	<div class="col-sm-3" align="center"> 
 		<img src="{{ asset($Personal->img) }}" class="img-thumbnail" alt="Profile Pic" width="200" height="200">
 		<p class="cls_phn_num"> <span class="glyphicon glyphicon-phone-alt" style="color: #357ed3;"></span> {{$Personal->phone}}</p>
+    @if($Personal->status==false)
+      <p class="alert alert-info"><strong>Status:</strong><span>Waiting for admin approval</span></p>
+    @endif
 	</div>
 	<div class="col-sm-6 pro-info">
 	<table class="table info_table">
