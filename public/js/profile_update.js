@@ -11,4 +11,7 @@ $(document).ready(function(){
         	$("#SavePropic").css({"visibility":"visible"});
         }
     });
+
+    $('#fail').delay(3000).fadeOut('slow');
+    
 });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\User;
 use Auth;
 
@@ -58,7 +59,22 @@ class ProfileController extends Controller
 
     //Update User Password
     public function UpdatePassword(Request $request){
-        return $request->all();
+        $id=Auth::user()->student_id;
+        $dbVar=User::find($id);
+        $hashedPassword=$dbVar->password;
+
+        $this->validate($request,[
+            'old_password' => 'required|max:15|min:6',
+            'password' => 'required|max:15|min:6|confirmed',
+        ]);
+
+        if (Hash::check($request->old_password, $hashedPassword)) {
+            $dbVar->password=bcrypt($request['password']);
+            $dbVar->save();
+            return redirect()->route('viewProfile',$id);
+        }
+        $request->session()->flash('no_match', 'Invalid Old Password');
+        return redirect()->back();
     }
 
     //storing Profile Picture

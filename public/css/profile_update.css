@@ -43,6 +43,15 @@
 	visibility: hidden;
 }
 
+#fail{
+	font-family: Georgia, Serif;
+	font-size: 16px;
+}
+#fail strong{
+	font-size: 17px;
+	font-weight: bold;
+}
+
 /*Media query Section.*/
 
 @media (max-width: 768px) {
