@@ -37,7 +37,7 @@
 
                 <div class="col-sm-4">
 
-                    <form class="form-horizontal" action='{{route('admin.edit_contest.submit')}}' method="post">
+                    <form class="form-horizontal" action='/edit_contest' method="post">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <label id = "error" name="error">{{$error}}</label>
 

@@ -40,17 +40,15 @@ Route::get('notifications', function () {
 Route::prefix('admin')->group(function(){
 	Route::get('/login','Auth\AdminLoginController@ShowLogInForm');
 	Route::post('/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
-	Route::get('/arrange_contest','AdminController@getContestRegistration');
-	Route::post('/arrange_contest','AdminController@postContestRegistration');
-	Route::get('/edit_contest','AdminController@getEditContest');
-	Route::post('/edit_contest','AdminController@postEditContest');
-	Route::get('/member_request','AdminController@getMemberRequest');
-	Route::post('/member_request','AdminController@updateMemberRequest');
 	Route::post('/logout','Auth\AdminLoginController@logout')->name('admin.logout');
-
 });
 
-
+Route::get('/arrange_contest','AdminController@getContestRegistration');
+Route::post('/arrange_contest','AdminController@postContestRegistration');
+Route::get('/edit_contest','AdminController@getEditContest');
+Route::post('/edit_contest','AdminController@postEditContest');
+Route::get('/member_request','AdminController@getMemberRequest');
+Route::post('/member_request','AdminController@updateMemberRequest');
 
 //End Admin Route Section
 
