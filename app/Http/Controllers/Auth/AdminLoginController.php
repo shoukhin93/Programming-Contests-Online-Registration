@@ -11,7 +11,7 @@ class AdminLoginController extends Controller
 
 	public function __construct()
     {
-        $this->middleware('guest:admin');
+        $this->middleware('guest:admin',['except' => 'logout']);
     }
 
     public function ShowLogInForm(){
@@ -29,9 +29,14 @@ class AdminLoginController extends Controller
     	}
     	return redirect()->back();
     }
-	public function LogOut()
+	public function logout(Request $request)
 	{
-		Session::flush();
+		Auth::guard('admin')->logout();
+
+        $request->session()->flush();
+
+        $request->session()->regenerate();
+
 		return redirect('/');
 	}
 }

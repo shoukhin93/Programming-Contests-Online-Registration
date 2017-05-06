@@ -46,7 +46,7 @@ Route::prefix('admin')->group(function(){
 	Route::post('/edit_contest','AdminController@postEditContest');
 	Route::get('/member_request','AdminController@getMemberRequest');
 	Route::post('/member_request','AdminController@updateMemberRequest');
-	Route::post('/logout','Auth\AdminLoginController@logout');
+	Route::post('/logout','Auth\AdminLoginController@logout')->name('admin.logout');
 
 });
 
