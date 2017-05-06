@@ -34,7 +34,26 @@ class ProfileController extends Controller
 
     //Update Profile Info
     public function EditProfile(Request $request){
-        return $request->all();
+
+         $this->validate($request,[
+            'userFirstName' => 'required|max:15',
+            'userLastName' => 'required|max:15',
+            'studentYear' => 'required',
+            // 'gender' => 'required',
+            //'email' => 'required|unique:accounts',
+            'userContactNo' => 'required|numeric',
+        ]);
+
+        $id=Auth::user()->student_id;
+        $dbVar=User::find($id);
+        $dbVar->fname=$request['userFirstName'];
+        $dbVar->lname=$request['userLastName'];
+        $dbVar->year=$request['studentYear'];
+        // $dbVar->gender=$request[''];
+        $dbVar->phone=$request['userContactNo'];
+        $dbVar->save();
+
+        return redirect()->route('viewProfile',$id);
     }
 
     //Update User Password

@@ -61,45 +61,71 @@
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group {{ $errors->has('userFirstName') ? ' has-error' : '' }}">
                     <label class="col-lg-3 control-label">First name:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" name="fname" value="{{$Personal->fname}}" required>
+                      <input class="form-control" type="text" name="userFirstName" placeholder="First Name" value="{{$Personal->fname}}" required>
+                      @if ($errors->has('userFirstName'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('userFirstName') }}</strong>
+                        </span>
+                      @endif
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group {{ $errors->has('userLastName') ? ' has-error' : '' }}">
                     <label class="col-lg-3 control-label">Last name:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" name="lname" value="{{$Personal->lname}}" required>
+                      <input class="form-control" type="text" placeholder="Last Name" name='userLastName' value="{{$Personal->lname}}" required>
+                       @if ($errors->has('userLastName'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('userLastName') }}</strong>
+                        </span>
+                      @endif
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                     <label class="col-lg-3 control-label">Email:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="email" name="email" value="{{$Personal->email}}" required>
+                      <input class="form-control" type="email" name="email" placeholder="Enter Email" value="{{$Personal->email}}" readonly>
+                       @if ($errors->has('email'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                      @endif
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group {{ $errors->has('studentYear') ? ' has-error' : '' }}">
                     <label class="col-lg-3 control-label">Your Year:</label>
                     <div class="col-lg-8">
                       <div class="ui-select">
-                        <select id="user_time_zone" name="year" class="form-control" required>
-                          <option style="color: black" value="1'st">1st Year</option>
-                          <option style="color: black" value="2'nd">2nd Year</option>
-                          <option style="color: black" value="3'rd" selected>3rd Year</option>
-                          <option style="color: black" value="4'th">4th Year</option>
+                        <select id="user_time_zone" name="studentYear" class="form-control" required>
+                          <option style="color: black" value="1'st" @if($Personal->year=="1'st") selected @endif>1st Year</option>
+                          <option style="color: black" value="2'nd" @if($Personal->year=="2'nd") selected @endif>2nd Year</option>
+                          <option style="color: black" value="3'rd" @if($Personal->year=="3'rd") selected @endif>3rd Year</option>
+                          <option style="color: black" value="4'th" @if($Personal->year=="4'th") selected @endif>4th Year</option>
                         </select>
                       </div>
+                       @if ($errors->has('studentYear'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('studentYear') }}</strong>
+                        </span>
+                      @endif
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group {{ $errors->has('userContactNo') ? ' has-error' : '' }}">
                     <label class="col-lg-3 control-label">Contact No:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" name="phone" value="{{$Personal->phone}}" required>
+                      <input class="form-control" type="text" name="userContactNo" value="{{$Personal->phone}}" required>
+                      @if ($errors->has('userContactNo'))
+                        <br>
+                        <span class="help-block">
+                            <strong>{{ $errors->first('userContactNo') }}</strong>
+                        </span>
+                      @endif
                     </div>
                   </div>
 
