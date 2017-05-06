@@ -50,9 +50,9 @@
 
             <!--Right navigation start -->
             <ul class="nav navbar-nav navbar-right my-menu">
-                @if(Auth::check())
+                @if(Auth::guard('web')->check())
                     <li><a href="notifications"><span class="glyphicon glyphicon-bell"></span></a></li>
-                    <li><a href="/14025423">Profile</a></li>
+                    <li><a href="{{route('viewProfile',Auth::guard('web')->user()->student_id)}}">Profile</a></li>
                 @endif
                 {{-- <li><a href="#" data-toggle="modal"
                        data-target="#signinModal">Login</a></li> --}}
