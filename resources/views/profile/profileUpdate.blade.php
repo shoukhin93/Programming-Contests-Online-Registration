@@ -22,8 +22,8 @@
 
     <div class="col-sm-4 pro_image" align="center">
         <h4>Current Profile Picture.</h4>
-        <img  id="ProPicUp" src="{{ asset('image/RakulPreet.jpg') }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
-        <form action="StorePic" method="post" enctype="multipart/form-data">
+        <img  id="ProPicUp" src="{{ asset($Personal->img) }}" class="img-thumbnail clearfix" alt="Profile Pic" width="200" height="200">
+        <form action="{{route('savePicture')}}" method="post" enctype="multipart/form-data">
              <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-group">
                 <input type="file" name="fileToUpload" id="fileToUpload" class="file" accept="image/jpg, image/jpeg, image/png" required>
@@ -52,32 +52,33 @@
         <div class="tab-content">
             <div id="basic" class="tab-pane fade in active">
                 <br>
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" method="post" action="{{route('editProfile.submit')}}">
+                  <input type="hidden" name="_token" value="{{csrf_token()}}">
                   <div class="form-group">
                     <label class="col-lg-3 control-label">Your ID:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" value="14025423" readonly>
+                      <input class="form-control" type="text" value="{{$Personal->student_id}}" readonly>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label class="col-lg-3 control-label">First name:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" value="Rakul Preet">
+                      <input class="form-control" type="text" name="fname" value="{{$Personal->fname}}" required>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label class="col-lg-3 control-label">Last name:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" value="Sing">
+                      <input class="form-control" type="text" name="lname" value="{{$Personal->lname}}" required>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label class="col-lg-3 control-label">Email:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="email" value="info@something.com">
+                      <input class="form-control" type="email" name="email" value="{{$Personal->email}}" required>
                     </div>
                   </div>
 
@@ -85,7 +86,7 @@
                     <label class="col-lg-3 control-label">Your Year:</label>
                     <div class="col-lg-8">
                       <div class="ui-select">
-                        <select id="user_time_zone" class="form-control">
+                        <select id="user_time_zone" name="year" class="form-control" required>
                           <option style="color: black" value="1'st">1st Year</option>
                           <option style="color: black" value="2'nd">2nd Year</option>
                           <option style="color: black" value="3'rd" selected>3rd Year</option>
@@ -98,14 +99,14 @@
                   <div class="form-group">
                     <label class="col-lg-3 control-label">Contact No:</label>
                     <div class="col-lg-8">
-                      <input class="form-control" type="text" value="01915770274">
+                      <input class="form-control" type="text" name="phone" value="{{$Personal->phone}}" required>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                      <input type="button" class="btn btn-primary" value="Update Profile">
+                      <input type="submit" class="btn btn-primary" value="Update Profile">
                       <span></span>
                       {{-- <input type="reset" class="btn btn-default" value="Cancel"> --}}
                     </div>
@@ -120,23 +121,30 @@
 
             <div id="pass" class="tab-pane fade">
                 <br>
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" method="post" action="{{route('change_password.submit')}}">
+                  <input type="hidden" name="_token" value="{{csrf_token()}}">
+                     <div class="form-group">
+                        <label class="col-md-3 control-label">Old Password:</label>
+                        <div class="col-md-8">
+                          <input class="form-control" type="password" value="" name="old_password" placeholder="Enter Old Password" required>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label">Password:</label>
                         <div class="col-md-8">
-                          <input class="form-control" type="password" value="" placeholder="Enter New Password">
+                          <input class="form-control" type="password" value="" name="password" placeholder="Enter New Password" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label">Confirm password:</label>
                         <div class="col-md-8">
-                          <input class="form-control" type="password" value="" placeholder="Confirm New Password">
+                          <input class="form-control" type="password" value="" name="password_confirmation" placeholder="Confirm New Password" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label"></label>
                         <div class="col-md-8">
-                          <input type="button" class="btn btn-primary" value="Update Password">
+                          <input type="submit" class="btn btn-primary" value="Update Password">
                           <span></span>
                           {{-- <input type="reset" class="btn btn-default" value="Cancel"> --}}
                         </div>
