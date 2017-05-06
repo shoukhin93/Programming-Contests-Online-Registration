@@ -39,6 +39,22 @@
 
           <button id="SavePropic" class="btn btn-primary " type="submit" style="width:220px;"><i class="glyphicon glyphicon-ok-sign"></i> Set as Profile</button>
         </form>
+       
+          @if ($errors->has('fileToUpload'))
+            <div class="alert alert-danger">
+              <span class="help-block">
+                  <strong>{{ $errors->first('fileToUpload') }}</strong>
+              </span>
+            </div>
+          @endif
+          @if (Session::has('wrong'))
+            <div class="alert alert-danger">
+              <span class="wrong">
+                <strong> {{ Session::get('wrong') }}</strong>
+              </span>
+            </div>
+          @endif
+        
     </div>
 
     <div class="col-sm-8 pro_info">
