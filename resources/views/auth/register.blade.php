@@ -41,8 +41,7 @@
                     <div class="jumbotron">
                         <h2 align="center">Welcome to Registration page</h2>  <br>
                         <p>Fill the data correctly and wait for admin's confirmation.</p>
-                        <p>Already have an account? try <a href="#" data-toggle="modal"
-                                                           data-target="#signinModal">Sign in</a></p>
+                        <p>Already have an account? try <a href="{{route('login')}}">Sign in</a></p>
                     </div>
                 </div>
 
