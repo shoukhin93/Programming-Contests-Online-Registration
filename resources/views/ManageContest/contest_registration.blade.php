@@ -65,10 +65,5 @@
             </div>
         </div>
     </div>
-
-
-    @include('login.login')
-
-
 @endsection
   
