@@ -72,41 +72,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-// Route::get('profileGetdata',function(){
-//     //$res = Input::get('search');
-//     //$result = App\User::where('student_id', 'LIKE','$res%')->get();
-//     /*$fnal = [];
-
-//     foreach($result as $res)
-//     {
-//         array_push($fnal,$result["student_id"]);
-//     }*/
-
-//     $fnal = [
-//       "ActionScript",
-//       "AppleScript",
-//       "Asp",
-//       "BASIC",
-//       "C",
-//       "C++",
-//       "Clojure",
-//       "COBOL",
-//       "ColdFusion",
-//       "Erlang",
-//       "Fortran",
-//       "Groovy",
-//       "Haskell",
-//       "Java",
-//       "JavaScript",
-//       "Lisp",
-//       "Perl",
-//       "PHP",
-//       "Python",
-//       "Ruby",
-//       "Scala",
-//       "Scheme"
-//     ];
-//     return Response::json($fnal);
-// });
 
 Route::get('profileGetdata','AutoCompleteController@profile');

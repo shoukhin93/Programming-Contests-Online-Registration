@@ -1,21 +1,19 @@
 $("document").ready(function(){
-    $("#search").autocomplete({
-        source: 'profileGetdata',
-        minLength : 1,
-        select: function(event,ui)
-        {
-            var code = ui.item.value;
-            if(code != '')
+
+      $("#input").keyup(function(){
+            var query = $(this).val();
+            if(query != '')
             {
-                var redirect = '/'+code;
-                location.href = redirect;
+                $.ajax({
+                    url : "profileGetdata",
+                    method : "GET",
+                    data:{query:query},
+                    success:function(data)
+                    {
+                        $('#roll').fadeIn();
+                        $("#roll").html(data);
+                    }
+                });
             }
-        },
-        html: true,
-        open: function(event,ui)
-        {
-            $(".ui-autocomplete").css("z-index",10000);
-        },
-        autofocus : true
-    });
+      });
 });

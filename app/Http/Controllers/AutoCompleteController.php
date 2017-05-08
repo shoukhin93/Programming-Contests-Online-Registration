@@ -12,13 +12,14 @@ class AutoCompleteController extends Controller
 {
     public function profile()
     {
-        $input = Input::get('term'); 
+        $input = Input::get('query'); 
         $res = User::where('student_id','LIKE',$input.'%')->take(5)->get();
-        $fnal = [];
+        $fnal = '<ul class = "list-unstyled">';
         foreach($res as $result)
         {
-             array_push($fnal,$result["student_id"]);
+            $fnal.='<li>'.$result["student_id"].'</li>';
         }
-        return response()->json($fnal);
+        $fnal.='</ul>';
+        echo $fnal;
     }
 }
