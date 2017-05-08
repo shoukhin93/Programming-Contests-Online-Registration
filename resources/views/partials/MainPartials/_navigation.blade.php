@@ -108,4 +108,4 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-@include('login.login') <!-- Login modal -->
+{{-- @include('login.login') <!-- Login modal --> --}}

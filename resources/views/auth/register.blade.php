@@ -184,8 +184,6 @@
         });
     </script>
 
-    @include('login.login')
-
 
 
 
