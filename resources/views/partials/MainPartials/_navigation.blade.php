@@ -37,9 +37,10 @@
                   
                   @if(Auth::guard('admin')->check() || Auth::check())
                     <li class="Search ">
-                        <form class="navbar-form">
-                            <input type="text" name = "input" id="input" class ="form-control" placeholder="search">
-                            <div id = "roll"></div>
+                        <form class="navbar-form" action="" method="get">
+                            <div class="ui-widget">
+                                <input id = "search" type="text" class="form-control" placeholder="Search">
+                            </div>
                         </form>
                     </li>
                 @endif
