@@ -4,6 +4,16 @@
     {{--Every child page should inject page title through section name title--}}
     @include('partials.MainPartials._head')
     @yield('OuterInclude')
+    <style type="text/css">
+      #ContentOfBody{
+        bottom: 0;
+        left: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+      }
+    </style>
   </head>
 
   <body>
