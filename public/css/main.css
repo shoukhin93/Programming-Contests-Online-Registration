@@ -83,6 +83,23 @@ hr{
     }
 }
 
+@media (max-width: 850px)  {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+#search{
+    width: 100px;
+}
 footer{
     text-align: center;
     background: #2f2f2f;

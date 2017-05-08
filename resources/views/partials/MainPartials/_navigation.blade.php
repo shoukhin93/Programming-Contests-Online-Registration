@@ -36,10 +36,10 @@
                 <li class="accept_team"><a href="/registered_team">Accepted Team</a></li>
                   
                   @if(Auth::guard('admin')->check() || Auth::check())
-                    <li class="Search">
-                        <form class="navbar-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
+                    <li class="Search ">
+                        <form class="navbar-form" action="" method="get">
+                            <div class="ui-widget">
+                                <input id = "search" type="text" class="form-control" placeholder="Search">
                             </div>
                         </form>
                     </li>
