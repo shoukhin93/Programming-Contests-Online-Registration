@@ -70,7 +70,5 @@ Route::get('contests', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
 
 Route::get('profileGetdata','AutoCompleteController@profile');
