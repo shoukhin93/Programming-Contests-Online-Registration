@@ -39,12 +39,31 @@
 
           <button id="SavePropic" class="btn btn-primary " type="submit" style="width:220px;"><i class="glyphicon glyphicon-ok-sign"></i> Set as Profile</button>
         </form>
+       
+          @if ($errors->has('fileToUpload'))
+            <div class="alert alert-danger">
+              <span class="help-block">
+                  <strong>{{ $errors->first('fileToUpload') }}</strong>
+              </span>
+            </div>
+          @endif
+          @if (Session::has('wrong'))
+            <div class="alert alert-danger">
+              <span class="wrong">
+                <strong> {{ Session::get('wrong') }}</strong>
+              </span>
+            </div>
+          @endif
+        
     </div>
 
     <div class="col-sm-8 pro_info">
       @if(count($errors) > 0 || Session::has('no_match'))
-        <p id="fail" style="margin-bottom: 3px; text-align: center;" class="alert alert-danger"><strong>FAIL</strong>, Please fill information correctly</p>
-      @endif
+        <div id="errMsg">
+            <button id="fail" type="button" class="pull-right alert-danger"><span class="glyphicon glyphicon-remove alert-danger"> </span></button>
+            <p style="margin-bottom: 3px; text-align: center;" class="alert alert-danger fail"><strong>FAIL</strong>, Please fill information correctly.</p>
+        </div>
+      @endif 
         <h3 style="margin-bottom: 3px;">Update Your Personal info </h3> 
 
         <ul class="nav nav-tabs">
