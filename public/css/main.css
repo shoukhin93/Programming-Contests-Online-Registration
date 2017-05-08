@@ -68,6 +68,20 @@ hr{
          background-color: #317cd3;
     }
 }
+@media (max-width: 850px)  {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
 
 footer{
     text-align: center;
