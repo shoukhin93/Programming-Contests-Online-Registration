@@ -48,13 +48,19 @@
                             <input type="text" class="form-control" id="teamName" placeholder="Team Name" name = "team_name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="mem1Id" placeholder="Your Student ID" name = "mem1">
+                            <div class="ui-widget">
+                                <input type="text" class="form-control" id="mem1ID" placeholder="Your Student ID" name = "mem1">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="mem2ID" placeholder="Member 2 Student ID"  name = "mem2">
+                            <div class="ui-widget">
+                                <input type="text" class="form-control" id="mem2ID" placeholder="Member 2 Student ID"  name = "mem2">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="mem3ID" placeholder="Member 3 Student ID"  name = "mem3">
+                            <div class="ui-widget">
+                                <input type="text" class="form-control" id="mem3ID" placeholder="Member 3 Student ID"  name = "mem3">
+                            </div>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
@@ -67,7 +73,6 @@
     </div>
 
 
-    @include('login.login')
 
 
 @endsection

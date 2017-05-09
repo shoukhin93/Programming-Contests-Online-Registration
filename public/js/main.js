@@ -18,4 +18,36 @@ $("document").ready(function(){
         },
         autofocus : true
     });
+    $("#mem1ID").autocomplete({
+        source: 'profileGetdata',
+        minLength : 1,
+        html: true,
+        open: function(event,ui)
+        {
+            $(".ui-autocomplete").css("z-index",10000);
+        },
+        autofocus : true
+    });
+
+    $("#mem2ID").autocomplete({
+        source: 'profileGetdata',
+        minLength : 1,
+        html: true,
+        open: function(event,ui)
+        {
+            $(".ui-autocomplete").css("z-index",10000);
+        },
+        autofocus : true
+    });
+
+    $("#mem3ID").autocomplete({
+        source: 'profileGetdata',
+        minLength : 1,
+        html: true,
+        open: function(event,ui)
+        {
+            $(".ui-autocomplete").css("z-index",10000);
+        },
+        autofocus : true
+    });
 });
