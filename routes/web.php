@@ -57,10 +57,7 @@ Route::get('contest_registration','TeamRegistrationController@getUserRegistratio
 Route::post('contest_registration','TeamRegistrationController@postUserRegistration');
 
 
-
-Route::get('registered_team', function () {
-    return view('Lists.registered_team');
-})->name('registered_team');
+Route::get('registered_team','ListController@getTeams');
 
 Route::get('/contest_result', 'ListController@getResults');
 

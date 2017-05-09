@@ -49,7 +49,7 @@
                         </div>
                         <div class="form-group">
                             <div class="ui-widget">
-                                <input type="text" class="form-control" id="mem1ID" placeholder="Your Student ID" name = "mem1">
+                                <input type="text" class="form-control" id="mem1ID" placeholder="Your Student ID" name = "mem1" value = {{Auth::user()->student_id}} readonly>
                             </div>
                         </div>
                         <div class="form-group">
@@ -65,18 +65,9 @@
 
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
                     </form>
-
-
                 </div>
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> 47a2e8af5aebf64d6eb881aea5875e481369554a
 @endsection
   

@@ -30,95 +30,24 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="accpeted">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    <lead>Accpeted
-                                        <lead>
-                                </td>
-                            </tr>
+                             @if($teams)
+                                 @foreach($teams as $team)
+                                    <tr>
+                                        <td class="team_name">{{$team->team_name}}</td>
+                                        <td>
+                                            <p>{{$team->team_leader}}</p>
+                                            <p>{{$team->mem2}}</p>
+                                            <p>{{$team->mem3}}</p>
+                                        </td>
+                                        <td class="accpeted">
+                                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                            <lead>Accpeted
+                                                <lead>
+                                        </td>
+                                    </tr>
+                                  @endforeach
+                             @endif
                             </tbody>
-                            <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="accpeted">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    <lead>Accpeted
-                                        <lead>
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="accpeted">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    <lead>Accpeted
-                                        <lead>
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="accpeted">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    <lead>Accpeted
-                                        <lead>
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="accpeted">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    <lead>Accpeted
-                                        <lead>
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tbody>
-                            <tr>
-                                <td class="team_name">RU_TITANS</td>
-                                <td>
-                                    <p>Tanvir Ahmod Shoukhin</p>
-                                    <p>Jaggesher Mondal</p>
-                                    <p>Rajob Raihan Monmoy</p>
-                                </td>
-                                <td class="accpeted">
-                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                    <lead>Accpeted
-                                        <lead>
-                                </td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div> <!--End Of table-responsive-->
             </div> <!--End Of col-->
