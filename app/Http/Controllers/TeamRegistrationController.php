@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use App\account;
+use App\User as account;
 use App\team;
 use App\invitation;
 
