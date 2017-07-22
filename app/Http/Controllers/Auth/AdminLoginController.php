@@ -27,6 +27,9 @@ class AdminLoginController extends Controller
     	if(Auth::guard('admin')->attempt(['admin_id' => $request->admin_id,'password' => $request->password],$request->remember)){
 			return redirect('/');
     	}
+
+        $request->session()->flash('admin_no_match', 'These credentials do not match our records.');
+
     	return redirect()->back();
     }
 	public function logout(Request $request)

@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('title')
-    Log In
+    Admin Log In
 @endsection
 
 @section('OuterInclude')
@@ -24,15 +24,16 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('admin.login.submit') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('admin_id') ? ' has-error' : '' }}">
+                    <div class="form-group {{ $errors->has('admin_id') ? 'has-error' :'' }} {{ Session::has('admin_no_match') ? 'has-error' : '' }}">
                             <label for="admin_id" class="col-md-4 control-label">Admin ID</label>
 
                             <div class="col-md-6">
                                 <input id="admin_id" type="text" class="form-control" name="admin_id" value="{{ old('admin_id') }}" max="15" required autofocus>
 
-                                @if ($errors->has('admin_id'))
+                                @if ($errors->has('admin_id') || Session::has('admin_no_match'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('admin_id') }}</strong>
+                                        <strong> {{ Session::get('admin_no_match') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -90,5 +91,6 @@
     <br>
     <br>
     <br>
+
 </div>
 @endsection
