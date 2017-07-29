@@ -210,21 +210,25 @@
             </div>
 
         </div>
-
+       
         <div class="Pagination-section">
-            <ul class="pagination">
-                <li></li>
-               {{--  <li><a href="#"><span class="glyphicon glyphicon-backward"> </a></li> --}}
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-               {{--  <li><a href="#"><span class="glyphicon glyphicon-forward"> </a></li> --}}
-                <li></li>
-          </ul>
+
+             {{ $users->links() }}
+
         </div>
     
     </div>
 @endsection 
 
+{{-- My Previous Pagination Design --}}
+    {{--  <ul class="pagination">
+        <li></li>
+        <li><a href="#"><span class="glyphicon glyphicon-backward"> </a></li>
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-forward"> </a></li>
+        <li></li>
+    </ul> --}}

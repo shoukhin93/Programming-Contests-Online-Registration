@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\running_contest;
+use App\User;
 
 class AdminController extends Controller
 {
@@ -85,7 +86,8 @@ class AdminController extends Controller
 
     // This Function Return all Member request view
     public function getMemberRequest(){
-        return view('Registration.member_request');
+        $users = User::where('status', '=', false)->paginate(1);
+        return view('Registration.member_request')->with('users',$users);
     }
     //This Function accept or delete a member
     public function updateMemberRequest(Request $request){
