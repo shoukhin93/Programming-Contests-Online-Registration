@@ -26,159 +26,27 @@
             {{-- <div class="col-sm-2"></div> --}}
         </div>
         <div class="row">
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025423</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025424</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
+            @foreach($users as $user)
+                <div class="col-sm-3">
+                    <div class="mem_box">
+                        <h2><strong> <i>{{$user["student_id"]}}</i></strong></h2>
+                        <h3>{{$user["fname"]}}  {{$user["lname"]}} </h3>
+                        <h4>{{$user["year"]}}.</h4>
+                        <h4><span class="glyphicon glyphicon-phone-alt"></span>: {{$user["phone"]}}</h4>
+                        <div class="mem_btn_div">
+                            <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
+                                    data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
+                            <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
+                                    data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025425</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025426</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025423</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025427</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025428</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>13025423</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            @endforeach
 
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>10025423</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>15025423</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
+            {{-- Sample Core  Design --}}
+            {{-- <div class="col-sm-3">
                 <div class="mem_box">
                     <h2><strong> <i>14025423</i></strong></h2>
                     <h3>Rakul Preet Sing</h3>
@@ -192,43 +60,30 @@
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="mem_box">
-                    <h2><strong> <i>14025423</i></strong></h2>
-                    <h3>Rakul Preet Sing</h3>
-                    <h4>Third Year Student.</h4>
-                    <h4><span class="glyphicon glyphicon-phone-alt"></span>: 01915770274</h4>
-                    <div class="mem_btn_div">
-                        <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                        <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </div> --}}
 
         </div>
        
         <div class="Pagination-section">
 
-             {{ $users->links() }}
+            {{ $users->links() }}
+
+            {{-- Pagination Core Design --}}
+            {{--  <ul class="pagination">
+                <li></li>
+                <li><a href="#"><span class="glyphicon glyphicon-backward"> </a></li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-forward"> </a></li>
+                <li></li>
+            </ul> --}}
 
         </div>
     
     </div>
 @endsection 
 
-{{-- My Previous Pagination Design --}}
-    {{--  <ul class="pagination">
-        <li></li>
-        <li><a href="#"><span class="glyphicon glyphicon-backward"> </a></li>
-        <li><a href="#">1</a></li>
-        <li class="active"><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-forward"> </a></li>
-        <li></li>
-    </ul> --}}
+    

@@ -86,7 +86,7 @@ class AdminController extends Controller
 
     // This Function Return all Member request view
     public function getMemberRequest(){
-        $users = User::where('status', '=', false)->paginate(1);
+        $users = User::where('status', '=', false)->paginate(4);
         return view('Registration.member_request')->with('users',$users);
     }
     //This Function accept or delete a member
