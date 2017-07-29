@@ -39,7 +39,7 @@ Route::get('notifications','ProfileController@getNotification')->name('getNotifi
 
 //Admin Route Section
 Route::prefix('admin')->group(function(){
-	Route::get('/login','Auth\AdminLoginController@ShowLogInForm');
+	Route::get('/login','Auth\AdminLoginController@ShowLogInForm')->name('admin.login');
 	Route::post('/login','Auth\AdminLoginController@Login')->name('admin.login.submit');
 	Route::post('/logout','Auth\AdminLoginController@logout')->name('admin.logout');
 });
