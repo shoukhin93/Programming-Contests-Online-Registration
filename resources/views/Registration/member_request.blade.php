@@ -35,11 +35,12 @@
                         <h4>{{$user["year"]}}.</h4>
                         <h4><span class="glyphicon glyphicon-phone-alt"></span>: {{$user["phone"]}}</h4>
                         <div class="mem_btn_div">
-                            <button class="btn btn-default btn-md pull-left" type="button" data-toggle="tooltip"
-                                    data-placement="bottom" title="Accept"><i class="glyphicon glyphicon-ok"></i></button>
-                            <button class="btn btn-default btn-md pull-right" type="button" data-toggle="tooltip"
-                                    data-placement="bottom" title="Remove"><i class="glyphicon glyphicon-remove"></i>
-                            </button>
+                            <form role="form" method="post" action="{{route('request.action')}}">
+                                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                <input type="hidden" name="id" value="{{$user["student_id"]}}">
+                                <button name="action" value="accept" class="btn btn-default btn-md pull-left" type="submit" data-toggle="tooltip" data-placement="bottom" title="Accept" ><i class="glyphicon glyphicon-ok"></i></button>
+                                <button name="action" value="remove" class="btn btn-default btn-md pull-right" type="submit" data-toggle="tooltip" data-placement="bottom" title="Remove" ><i class="glyphicon glyphicon-remove"></i></button>
+                            </form>     
                         </div>
                     </div>
                 </div>

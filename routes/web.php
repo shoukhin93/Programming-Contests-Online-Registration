@@ -49,7 +49,7 @@ Route::post('/arrange_contest','AdminController@postContestRegistration');
 Route::get('/edit_contest','AdminController@getEditContest');
 Route::post('/edit_contest','AdminController@postEditContest');
 Route::get('/member_request','AdminController@getMemberRequest');
-Route::post('/member_request','AdminController@updateMemberRequest');
+Route::post('/member_request','AdminController@updateMemberRequest')->name('request.action');
 
 //End Admin Route Section
 

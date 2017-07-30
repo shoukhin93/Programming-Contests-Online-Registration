@@ -91,6 +91,17 @@ class AdminController extends Controller
     }
     //This Function accept or delete a member
     public function updateMemberRequest(Request $request){
+        $id= $request->id;
+        $action=$request->action;
+        $dbVar= User::find($id);
 
+        if($action=="accept"){
+            $dbVar->status=true;
+            $dbVar->save();
+        }
+        else if($action=="remove"){
+            $dbVar->delete();
+        }
+         return redirect()->back();
     }
 }
